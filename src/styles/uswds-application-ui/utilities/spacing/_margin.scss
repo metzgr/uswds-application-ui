@@ -1,0 +1,72 @@
+@use "uswds-core" as *;
+@use "../../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Margin utilities
+// -----------------------------------------------------------------------------
+
+// Generate responsive margin utilities
+
+// Example class output: margin-3, margin-left-0-5, desktop:margin-y-6
+@include add-utility("margin", $theme-spacing-scale, "margin", true);
+// Logical start/end margin utilities (margin-inline-start, margin-inline-end)
+@include add-utility("margin-inline-start", $theme-spacing-scale, "margin-inline-start", true);
+@include add-utility("margin-inline-end",   $theme-spacing-scale, "margin-inline-end",   true);
+
+// -----------------------------------------------------------------------------
+// Auto margins
+// -----------------------------------------------------------------------------
+.margin-auto   { margin: auto !important; }
+.margin-x-auto { margin-inline: auto !important; }
+.margin-y-auto { margin-block: auto !important; }
+
+// -----------------------------------------------------------------------------
+// Negative margins (all directions, axes)
+// -----------------------------------------------------------------------------
+@each $key, $val in $theme-spacing-scale {
+  .margin-neg-#{$key}      { margin: -#{$val}; }
+  .margin-top-neg-#{$key}  { margin-top: -#{$val}; }
+  .margin-right-neg-#{$key}{ margin-right: -#{$val}; }
+  .margin-bottom-neg-#{$key}{ margin-bottom: -#{$val}; }
+  .margin-left-neg-#{$key} { margin-left: -#{$val}; }
+  .margin-x-neg-#{$key}    { margin-inline: -#{$val}; }
+  .margin-y-neg-#{$key}    { margin-block: -#{$val}; }
+}
+
+// -----------------------------------------------------------------------------
+// Explicit negative inline-start/end utilities
+// -----------------------------------------------------------------------------
+@each $key, $val in $theme-spacing-scale {
+  .margin-inline-start-neg-#{$key} { margin-inline-start: -#{$val}; }
+  .margin-inline-end-neg-#{$key}   { margin-inline-end:   -#{$val}; }
+}
+
+// -----------------------------------------------------------------------------
+// space-x-*  and  space-y-*
+// Sibling‑spacing utilities (margin-based).
+//
+// When to use:
+// • Parent is NOT flex/grid (e.g., plain <ul>, prose blocks) — `gap-*` won’t work.
+// • Need horizontal (x) or vertical (y) spacing independent of flex direction.
+// • Supporting legacy browsers that lack flex‑gap support (old Safari/Edge).
+//
+// If your container is modern flex or grid and browser support is fine,
+// prefer `gap-*` utilities for cleaner semantics.
+// -----------------------------------------------------------------------------
+
+@each $key, $val in $theme-spacing-scale {
+
+    // Horizontal spacing (left/right)
+    .space-x-#{$key} > * + * {
+      --space-x-reverse: 0;
+      margin-right: calc(#{$val} * var(--space-x-reverse));
+      margin-left:  calc(#{$val} * calc(1 - var(--space-x-reverse)));
+    }
+  
+    // Vertical spacing (top/bottom)
+    .space-y-#{$key} > * + * {
+      --space-y-reverse: 0;
+      margin-top:    calc(#{$val} * calc(1 - var(--space-y-reverse)));
+      margin-bottom: calc(#{$val} * var(--space-y-reverse));
+    }
+  }

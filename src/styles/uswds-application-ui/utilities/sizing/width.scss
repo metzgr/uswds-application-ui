@@ -1,0 +1,17 @@
+@use "uswds-core" as *;
+@use "../../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Sizing utilities
+// -----------------------------------------------------------------------------
+//
+// Generates fixed-width utility classes using the expanded 4‑pt spacing scale.
+// Example class output:
+//   width-4   -> width: 1rem  (16px)
+//   width-10  -> width: 2.5rem (40px)
+//
+// These utilities generate **responsive variants** out of the box (e.g., tablet:width-20, desktop:width-40).
+// -----------------------------------------------------------------------------
+
+
+@include add-utility("width", $theme-spacing-scale, "width", true);

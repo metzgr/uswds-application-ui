@@ -1,0 +1,18 @@
+
+
+@use "uswds-core" as *;
+@use "../../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Sizing utilities
+// -----------------------------------------------------------------------------
+//
+// Generates fixed-height utility classes using the expanded 4‑pt spacing scale.
+// Example class output:
+//   height-4   -> height: 1rem  (16px)
+//   height-10  -> height: 2.5rem (40px)
+//
+// These utilities generate **responsive variants** out of the box (e.g., tablet:height-20, desktop:height-40).
+// -----------------------------------------------------------------------------
+
+@include add-utility("height", $theme-spacing-scale, "height", true);

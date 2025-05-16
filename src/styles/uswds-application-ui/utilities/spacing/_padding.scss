@@ -1,0 +1,25 @@
+
+@use "uswds-core" as *;
+@use "../../_settings" as *;
+
+// ----------------------------------------------------------------------------
+// Example arbitrary padding invocations:
+//
+// Generate all-sides padding utility:
+// @include arbitrary-padding("p", "5vw");          // creates .p-[5vw] { padding: 5vw; }
+//
+// Generate directional padding utilities:
+// @include arbitrary-padding("pt", "1.25rem");     // creates .pt-[1.25rem] { padding-top: 1.25rem; }
+// @include arbitrary-padding("px", "var(--gap)");  // creates .px-[var(--gap)] { padding-left/right: var(--gap); }
+
+// -----------------------------------------------------------------------------
+// Padding utilities
+// -----------------------------------------------------------------------------
+
+// Generate responsive padding utilities (all directions, axis, and individual sides)
+// Example class output: padding-3, padding-left-0-5, desktop:padding-y-6
+@include add-utility("padding", $theme-spacing-scale, "padding", true);
+
+// Logical start/end padding utilities (padding-inline-start, padding-inline-end)
+@include add-utility("padding-inline-start", $theme-spacing-scale, "padding-inline-start", true);
+@include add-utility("padding-inline-end",   $theme-spacing-scale, "padding-inline-end",   true);
