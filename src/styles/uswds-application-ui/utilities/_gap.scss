@@ -1,0 +1,17 @@
+
+
+@use "uswds-core" as *;
+@use "../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Gap utilities
+// -----------------------------------------------------------------------------
+
+// 1. Universal gap (works on both CSS Grid and Flexbox)
+@include add-utility("gap", $theme-spacing-scale, "gap", true);
+
+// 2. Column-only gap (horizontal spacing) — equivalent to Tailwind's gap-x-*
+@include add-utility("gap-x", $theme-spacing-scale, "column-gap", true);
+
+// 3. Row-only gap (vertical spacing) — equivalent to Tailwind's gap-y-*
+@include add-utility("gap-y", $theme-spacing-scale, "row-gap", true);

@@ -1,0 +1,21 @@
+
+
+@use "uswds-core" as *;
+@use "../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Sizing utilities (width, height, max/min) generated from the expanded
+// 4‑pt spacing scale defined in _settings.scss.
+// -----------------------------------------------------------------------------
+
+// Exact width and height
+@include add-utility("width",  $theme-spacing-scale, "width",  false);
+@include add-utility("height", $theme-spacing-scale, "height", false);
+
+// Max‑width / Min‑width  (useful for cards, modals, etc.)
+@include add-utility("max-width", $theme-spacing-scale, "max-width", false);
+@include add-utility("min-width", $theme-spacing-scale, "min-width", false);
+
+// Max‑height / Min‑height
+@include add-utility("max-height", $theme-spacing-scale, "max-height", false);
+@include add-utility("min-height", $theme-spacing-scale, "min-height", false);

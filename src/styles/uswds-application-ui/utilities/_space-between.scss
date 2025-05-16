@@ -1,0 +1,16 @@
+
+
+@use "uswds-core" as *;
+@use "../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Spacing utilities
+// -----------------------------------------------------------------------------
+
+// Generate responsive margin utilities (all directions, axis, and individual sides)
+// Example class output: margin-2, margin-top-1, tablet:margin-x-4
+@include add-utility("margin",  $theme-spacing-scale, "margin",  true);
+
+// Generate responsive padding utilities
+// Example class output: padding-3, padding-left-0-5, desktop:padding-y-6
+@include add-utility("padding", $theme-spacing-scale, "padding", true);
