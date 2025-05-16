@@ -1,0 +1,13 @@
+@use "uswds-core" as *;
+@use "../../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Order utilities
+// -----------------------------------------------------------------------------
+.order-first { order: -9999 !important; }
+.order-last  { order:  9999 !important; }
+.order-none  { order:     0 !important; }
+
+@for $i from 1 through 12 {
+  .order-#{$i} { order: #{$i} !important; }
+}

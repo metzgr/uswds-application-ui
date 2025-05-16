@@ -1,0 +1,51 @@
+@use "uswds-core" as *;
+@use "../../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Display utilities
+// -----------------------------------------------------------------------------
+
+.display-inline         { display: inline !important; }
+.display-block          { display: block !important; }
+.display-inline-block   { display: inline-block !important; }
+.display-flow-root      { display: flow-root !important; }
+.display-flex           { display: flex !important; }
+.display-inline-flex    { display: inline-flex !important; }
+.display-grid           { display: grid !important; }
+.display-inline-grid    { display: inline-grid !important; }
+.display-contents       { display: contents !important; }
+.display-table          { display: table !important; }
+.display-inline-table   { display: inline-table !important; }
+.display-table-caption  { display: table-caption !important; }
+.display-table-cell     { display: table-cell !important; }
+.display-table-column   { display: table-column !important; }
+.display-table-column-group { display: table-column-group !important; }
+.display-table-footer-group { display: table-footer-group !important; }
+.display-table-header-group { display: table-header-group !important; }
+.display-table-row-group    { display: table-row-group !important; }
+.display-table-row      { display: table-row !important; }
+.display-list-item      { display: list-item !important; }
+.display-none         { display: none !important; }
+
+// Screen-reader only utilities
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border-width: 0 !important;
+}
+.not-sr-only {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: normal !important;
+}

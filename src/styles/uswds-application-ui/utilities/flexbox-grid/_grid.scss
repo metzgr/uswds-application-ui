@@ -1,0 +1,53 @@
+@use "uswds-core" as *;
+@use "../../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Grid display utility
+// -----------------------------------------------------------------------------
+.grid { display: grid !important; }
+
+// -----------------------------------------------------------------------------
+// Grid template columns & rows
+// -----------------------------------------------------------------------------
+@for $i from 1 through 12 {
+  .grid-cols-#{$i} {
+    grid-template-columns: repeat(#{$i}, minmax(0, 1fr)) !important;
+  }
+}
+@for $i from 1 through 6 {
+  .grid-rows-#{$i} {
+    grid-template-rows: repeat(#{$i}, minmax(0, 1fr)) !important;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Grid column & row span utilities
+// -----------------------------------------------------------------------------
+@for $i from 1 through 12 {
+  .col-span-#{$i} {
+    grid-column: span #{$i} / span #{$i} !important;
+  }
+}
+@for $i from 1 through 6 {
+  .row-span-#{$i} {
+    grid-row: span #{$i} / span #{$i} !important;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Grid auto-placement utilities
+// -----------------------------------------------------------------------------
+.grid-flow-row        { grid-auto-flow: row !important; }
+.grid-flow-col        { grid-auto-flow: column !important; }
+.grid-flow-row-dense  { grid-auto-flow: row dense !important; }
+.grid-flow-col-dense  { grid-auto-flow: column dense !important; }
+
+.auto-cols-auto       { grid-auto-columns: auto !important; }
+.auto-cols-min        { grid-auto-columns: min-content !important; }
+.auto-cols-max        { grid-auto-columns: max-content !important; }
+.auto-cols-fr         { grid-auto-columns: minmax(0, 1fr) !important; }
+
+.auto-rows-auto       { grid-auto-rows: auto !important; }
+.auto-rows-min        { grid-auto-rows: min-content !important; }
+.auto-rows-max        { grid-auto-rows: max-content !important; }
+.auto-rows-fr         { grid-auto-rows: minmax(0, 1fr) !important; }

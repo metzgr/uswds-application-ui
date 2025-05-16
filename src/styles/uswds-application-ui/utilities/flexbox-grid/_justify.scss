@@ -1,0 +1,17 @@
+@use "uswds-core" as *;
+@use "../../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Justify-content utilities (responsive)
+// -----------------------------------------------------------------------------
+@include add-utility("justify", $justify-content-map, "justify-content", true);
+
+// -----------------------------------------------------------------------------
+// Justify-items utilities (responsive)
+// -----------------------------------------------------------------------------
+@include add-utility("justify-items", $justify-items-map, "justify-items", true);
+
+// -----------------------------------------------------------------------------
+// Justify-self utilities (responsive)
+// -----------------------------------------------------------------------------
+@include add-utility("justify-self", $align-self-map, "justify-self", true);

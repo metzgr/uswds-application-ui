@@ -1,0 +1,73 @@
+@use "uswds-core" as *;
+@use "../../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Flexbox utilities
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// Flex shorthand utilities (responsive)
+// -----------------------------------------------------------------------------
+@include add-utility("flex",           $flex-map,           "flex",           true);
+
+// -----------------------------------------------------------------------------
+// Flex direction utilities (responsive)
+// -----------------------------------------------------------------------------
+@include add-utility("flex-direction", $flex-direction-map, "flex-direction", true);
+
+// -----------------------------------------------------------------------------
+// Flex wrap utilities (responsive)
+// -----------------------------------------------------------------------------
+@include add-utility("flex-wrap",      $flex-wrap-map,      "flex-wrap",      true);
+
+// -----------------------------------------------------------------------------
+// Additional flex-weight utilities for data-dense layouts
+// -----------------------------------------------------------------------------
+.flex-2 { flex: 2 1 0% !important; } // Two parts: e.g., main pane 2x as wide as sidebar
+.flex-3 { flex: 3 1 0% !important; } // Three parts: e.g., main pane 3x as wide as sidebar
+.flex-4 { flex: 4 1 0% !important; } // Four parts: e.g., main pane 4x as wide as sidebar
+
+// -----------------------------------------------------------------------------
+// Justify content utilities
+// -----------------------------------------------------------------------------
+.justify-start      { justify-content: flex-start !important; }
+.justify-end        { justify-content: flex-end !important; }
+.justify-center     { justify-content: center !important; }
+.justify-between    { justify-content: space-between !important; }
+.justify-around     { justify-content: space-around !important; }
+.justify-evenly     { justify-content: space-evenly !important; }
+
+// -----------------------------------------------------------------------------
+// Align items utilities
+// -----------------------------------------------------------------------------
+.items-start        { align-items: flex-start !important; }
+.items-end          { align-items: flex-end !important; }
+.items-center       { align-items: center !important; }
+.items-baseline     { align-items: baseline !important; }
+.items-stretch      { align-items: stretch !important; }
+
+// -----------------------------------------------------------------------------
+// Align content utilities
+// -----------------------------------------------------------------------------
+.content-start      { align-content: flex-start !important; }
+.content-end        { align-content: flex-end !important; }
+.content-center     { align-content: center !important; }
+.content-between    { align-content: space-between !important; }
+.content-around     { align-content: space-around !important; }
+.content-evenly     { align-content: space-evenly !important; }
+
+// -----------------------------------------------------------------------------
+// Align self utilities
+// -----------------------------------------------------------------------------
+.self-auto          { align-self: auto !important; }
+.self-start         { align-self: flex-start !important; }
+.self-end           { align-self: flex-end !important; }
+.self-center        { align-self: center !important; }
+.self-stretch       { align-self: stretch !important; }
+
+.// -----------------------------------------------------------------------------
+// Flex grow and shrink utilities
+// -----------------------------------------------------------------------------
+.grow    { flex-grow: 1 !important; }
+.grow-0  { flex-grow: 0 !important; }
+.shrink  { flex-shrink: 1 !important; }
+.shrink-0{ flex-shrink: 0 !important; }

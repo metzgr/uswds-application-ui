@@ -65,5 +65,113 @@ $theme-utilities: map-merge(
     "grid-gap":   false,
     "margin":  false,
     "padding": false,
+    "display-grid": false,
+    "grid-template-columns": false,
+    "grid-column": false,
+    "grid-template-rows": false,
+    "grid-row": false,
+    "grid-auto-flow": false,
+    "grid-auto-columns": false,
+    "grid-auto-rows": false,
+    "display-none":         false,
+    "display-block":        false,
+    "display-inline":       false,
+    "display-inline-block": false,
+    "display-inline-flex":  false,
+    "display-inline-grid":  false,
+    "display-list-item":    false,
+    "display-flex":         false,
   )
+);
+// -----------------------------------------------------------------------------
+// Utility value maps for responsive add-utility generation
+// -----------------------------------------------------------------------------
+
+$justify-content-map: (
+  start:   flex-start,
+  end:     flex-end,
+  center:  center,
+  between: space-between,
+  around:  space-around,
+  evenly:  space-evenly
+);
+
+$align-items-map: (
+  start:   flex-start,
+  end:     flex-end,
+  center:  center,
+  baseline: baseline,
+  stretch: stretch
+);
+
+$align-content-map: (
+  start:   flex-start,
+  end:     flex-end,
+  center:  center,
+  between: space-between,
+  around:  space-around,
+  evenly:  space-evenly
+);
+
+$align-self-map: (
+  auto:    auto,
+  start:   flex-start,
+  end:     flex-end,
+  center:  center,
+  stretch: stretch
+);
+
+$flex-direction-map: (
+  row:          row,
+  row-reverse:  row-reverse,
+  column:       column,
+  column-reverse: column-reverse
+);
+
+$flex-wrap-map: (
+  wrap:         wrap,
+  wrap-reverse: wrap-reverse,
+  nowrap:       nowrap
+);
+
+// -----------------------------------------------------------------------------
+// Flex shorthand map for responsive flex utilities
+// -----------------------------------------------------------------------------
+$flex-map: (
+  1:       1 1 0%,
+  auto:    1 1 auto,
+  initial: 0 1 auto,
+  none:    none,
+  2:       2 1 0%,
+  3:       3 1 0%,
+  4:       4 1 0%
+);
+
+// -----------------------------------------------------------------------------
+// Place utilities maps for responsive add-utility generation
+// -----------------------------------------------------------------------------
+
+$place-content-map: (
+  start:   start,
+  end:     end,
+  center:  center,
+  between: space-between,
+  around:  space-around,
+  evenly:  space-evenly,
+  stretch: stretch
+);
+
+$place-items-map: (
+  start:   start,
+  end:     end,
+  center:  center,
+  stretch: stretch
+);
+
+$place-self-map: (
+  auto:    auto,
+  start:   start,
+  end:     end,
+  center:  center,
+  stretch: stretch
 );
