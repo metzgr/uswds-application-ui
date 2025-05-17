@@ -1,0 +1,34 @@
+@use "uswds-core" as *;
+@use "../../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Font-size and line-height utilities
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// Font-size utilities (responsive)
+// -----------------------------------------------------------------------------
+@include add-utility("text",    $theme-type-scale,      "font-size", true);
+
+// -----------------------------------------------------------------------------
+// Line-height (leading) utilities (responsive)
+// -----------------------------------------------------------------------------
+@include add-utility("line-height", $theme-line-height-scale, "line-height", true);
+
+// -----------------------------------------------------------------------------
+// Combined font-size/line-height utilities (text-<size>/<scale>)
+// -----------------------------------------------------------------------------
+@each $sizeKey, $fontSize in $theme-type-scale {
+  @each $scaleKey, $scaleVal in $theme-spacing-scale {
+    .text-#{$sizeKey}\/#{$scaleKey} {
+      font-size: #{$fontSize} !important;
+      line-height: calc(var(--spacing) * #{$scaleKey}) !important;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Font-family utilities
+// -----------------------------------------------------------------------------
+@include add-utility("font-sans",  $theme-font-family-sans,  "font-family", true);
+@include add-utility("font-serif", $theme-font-family-serif, "font-family", true);
+@include add-utility("font-mono",  $theme-font-family-mono,  "font-family", true);

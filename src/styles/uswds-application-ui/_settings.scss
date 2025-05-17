@@ -3,18 +3,23 @@
 $theme-use-rem: true;
 $theme-spacing-scale: (
   "0":    0rem,
-  "px":   .0625rem,  // 1px
-  "0-5":  .125rem,   // 2px
+  "1px":   .0625rem,  // 1px
+  "05":  .125rem,   // 2px
   "1":    .25rem,    // 4px
-  "1-5":  .375rem,   // 6px
+  "5px":    .313rem,    // 5px
+  "105":  .375rem,   // 6px
   "2":    .5rem,     // 8px
-  "2-5":  .625rem,   // 10px
+  "205":  .625rem,   // 10px
   "3":    .75rem,    // 12px
-  "3-5":  .875rem,   // 14px
+  "305":  .875rem,   // 14px
   "4":    1rem,      // 16px
+  "405":    1.125rem,      // 18px
   "5":    1.25rem,   // 20px
+  "505":    1.375rem,      // 22px
   "6":    1.5rem,    // 24px
+  "605":    1.625rem,      // 26px
   "7":    1.75rem,   // 28px
+  "705":    1.875rem,    // 30px
   "8":    2rem,      // 32px
   "9":    2.25rem,   // 36px
   "10":   2.5rem,    // 40px
@@ -22,7 +27,9 @@ $theme-spacing-scale: (
   "12":   3rem,      // 48px
   "14":   3.5rem,    // 56px
   "16":   4rem,      // 64px
+  "18":   4.5rem,    // 72px
   "20":   5rem,      // 80px
+  "22":   5.25rem,   // 88px
   "24":   6rem,      // 96px
   "28":   7rem,      // 112px
   "32":   8rem,      // 128px
@@ -39,17 +46,146 @@ $theme-spacing-scale: (
   "96":   24rem      // 384px
 );
 
-// grayscale brand palette
-$theme-color-base-lightest: #ffffff;
-$theme-color-base-light:   #e5e5e5;
-$theme-color-base:         #bebebe;
-$theme-color-base-dark:    #6b6b6b;
-$theme-color-base-darkest: #2e2e2e;
+// -----------------------------------------------------------------------------
+// Type scale (font-size) and line-height tokens
+// Uses spacing-scale tokens for matching values; add raw rems where needed.
+// -----------------------------------------------------------------------------
+$theme-type-scale: (
+  xs:   map-get($theme-spacing-scale, "3"),     // 0.75rem (12px)
+  sm:   map-get($theme-spacing-scale, "305"),   // 0.875rem (14px)
+  md: map-get($theme-spacing-scale, "4"),     // 1rem (16px)
+  lg:   map-get($theme-spacing-scale, "405"),   // 1.125rem (18px)
+  xl:   map-get($theme-spacing-scale, "5"),     // 1.25rem (20px)
+  "2xl": map-get($theme-spacing-scale, "6"),    // 1.5rem (24px)
+  "3xl": map-get($theme-spacing-scale, "705"),   // 1.875rem (30px)
+  "4xl": map-get($theme-spacing-scale, "9"),    // 2.25rem (36px)
+  "5xl": map-get($theme-spacing-scale, "12"),   // 3rem (48px)
+  "6xl": map-get($theme-spacing-scale, "16"),   // 4rem (64px)
+  "7xl": map-get($theme-spacing-scale, "18"),  // 4.5rem (72px)
+  "8xl": map-get($theme-spacing-scale, "24"),   // 6rem (96px)
+  "9xl": map-get($theme-spacing-scale, "32")    // 8rem (128px)
+);
+
+$theme-line-height-scale: (
+  xs:    calc(1 / 0.75),   // line-height for text-xs
+  sm:    calc(1.25 / 0.875),// line-height for text-sm
+  md:  calc(1.5 / 1),    // line-height for text-md
+  lg:    calc(1.75 / 1.125),// line-height for text-lg
+  xl:    calc(1.75 / 1.25), // line-height for text-xl
+  "2xl": calc(2 / 1.5),    // line-height for text-2xl
+  "3xl": calc(2.25 / 1.875),// line-height for text-3xl
+  "4xl": calc(2.5 / 2.25),  // line-height for text-4xl
+  "5xl": 1,                 // line-height for text-5xl
+  "6xl": 1,                 // line-height for text-6xl
+  "7xl": 1,                 // line-height for text-7xl
+  "8xl": 1,                 // line-height for text-8xl
+  "9xl": 1,                 // line-height for text-9xl
+  none:  1     // line-height-none utility
+);
+
+// grayscale brand palette (derived from USWDS gray tokens)
+$theme-color-base-lightest: map-get(map-get($theme-color-palette, gray), 5);
+$theme-color-base-light:   map-get(map-get($theme-color-palette, gray), 10);
+$theme-color-base:         map-get(map-get($theme-color-palette, gray), 30);
+$theme-color-base-dark:    map-get(map-get($theme-color-palette, gray), 60);
+$theme-color-base-darkest: map-get(map-get($theme-color-palette, gray), 80);
 
 // map primary + secondary to grayscale tokens
+
 $theme-color-primary:        $theme-color-base-dark;
 $theme-color-primary-darker: $theme-color-base-darkest;
 $theme-color-secondary:      $theme-color-base;
+
+// -----------------------------------------------------------------------------
+// Extend every USWDS color palette with a 95-level (darkest) shade
+// -----------------------------------------------------------------------------
+@each $color-name, $color-map in $theme-color-palette {
+  $theme-color-palette: map-merge(
+    $theme-color-palette,
+    (
+      $color-name: map-merge(
+        $color-map,
+        (95: #000000) // Replace #000000 with your desired darkest hex
+      )
+    )
+  );
+}
+
+// -----------------------------------------------------------------------------
+// Override USWDS color palettes with custom hex scales
+// -----------------------------------------------------------------------------
+$theme-color-palette: map-merge(
+  $theme-color-palette,
+  (
+    gray: (
+      5:  #FAFAFA,
+      10: #F5F5F5,
+      20: #E9EAEB,
+      30: #D5D7DA,
+      40: #A4A7AE,
+      50: #717680,
+      60: #535862,
+      70: #414651,
+      80: #252B37,
+      90: #181D27,
+      95: #0A0D12
+    ),
+    red: (
+      5:  #FEF3F2,
+      10: #FEE4E2,
+      20: #FECDCA,
+      30: #FDA29B,
+      40: #F97066,
+      50: #F04438,
+      60: #D92D20,
+      70: #B42318,
+      80: #912018,
+      90: #7A271A,
+      95: #55160C
+    ),
+    indigo: (
+      5:  #EEF4FF,
+      10: #E0EAFF,
+      20: #C7D7FE,
+      30: #A4BCFD,
+      40: #8098F9,
+      50: #6172F3,
+      60: #444CE7,
+      70: #3538CD,
+      80: #2D31A6,
+      90: #2D3282,
+      95: #1F235B
+    ),
+    orange: (
+      5:  #FFF4ED,
+      10: #FFE6D5,
+      20: #FFD6AE,
+      30: #FF9C66,
+      40: #FF692E,
+      50: #FF4405,
+      60: #E62E05,
+      70: #BC1B06,
+      80: #97180C,
+      90: #771A0D,
+      95: #57130A
+    ),
+    green: (
+      5:  #ECFDF3,
+      10: #DCFAE6,
+      20: #ABEFC6,
+      30: #75E0A7,
+      40: #47CD89,
+      50: #17B26A,
+      60: #079455,
+      70: #067647,
+      80: #085D3A,
+      90: #074D31,
+      95: #053321
+    )
+  )
+);
+
+
 
 // Disable default USWDS width/height utilities so we can regenerate a comprehensive set
 $theme-utilities: map-merge(
