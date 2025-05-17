@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>USWDS Components Demo</title>
+  <link rel="stylesheet" href="node_modules/@uswds/uswds/dist/css/uswds.min.css">
+  <style>
+    .demo-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 2rem; }
+    .demo-item { border: 1px solid #ccc; padding: 1rem; }
+    .demo-item h2 { font-size: 1rem; margin-top: 0; }
+  </style>
+</head>
+<body>
+  <main class="usa-prose">
+    <h1>USWDS Components Demo</h1>
+    <div class="demo-grid">
+      <div class="demo-item">
+        <h2>Button</h2>
+        <a href="#" class="usa-button">Submit</a>
+      </div>
+      <div class="demo-item">
+        <h2>Alert</h2>
+        <div class="usa-alert usa-alert--info" role="alert">
+          <div class="usa-alert__body">
+            <p class="usa-alert__text">This is an informational alert.</p>
+          </div>
+        </div>
+      </div>
+      <div class="demo-item">
+        <h2>Accordion</h2>
+        <div class="usa-accordion">
+          <h4 class="usa-accordion__heading">
+            <button type="button" class="usa-accordion__button" aria-expanded="true" aria-controls="acc1">Section 1</button>
+          </h4>
+          <div id="acc1" class="usa-accordion__content usa-prose">
+            <p>Content for section 1.</p>
+          </div>
+          <h4 class="usa-accordion__heading">
+            <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="acc2">Section 2</button>
+          </h4>
+          <div id="acc2" class="usa-accordion__content usa-prose">
+            <p>Content for section 2.</p>
+          </div>
+        </div>
+      </div>
+      <div class="demo-item">
+        <h2>Card</h2>
+        <div class="usa-card">
+          <div class="usa-card__container">
+            <header class="usa-card__header">
+              <h3 class="usa-card__heading">Card title</h3>
+            </header>
+            <div class="usa-card__body">
+              <p>A short card description goes here.</p>
+            </div>
+            <div class="usa-card__footer">
+              <a href="#" class="usa-button usa-button--secondary">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-item">
+        <h2>Table</h2>
+        <table class="usa-table">
+          <thead>
+            <tr>
+              <th>Column</th>
+              <th>Column</th>
+              <th>Column</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data</td>
+              <td>Data</td>
+              <td>Data</td>
+            </tr>
+            <tr>
+              <td>Data</td>
+              <td>Data</td>
+              <td>Data</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="demo-item">
+        <h2>Footer</h2>
+        <footer class="usa-footer">
+          <div class="usa-footer__return-to-top"><a href="#top">Return to top</a></div>
+          <div class="grid-row grid-gap">
+            <div class="usa-footer__primary-section">
+              <ul class="usa-list usa-list--unstyled">
+                <li class="usa-footer__primary-content">Footer content</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </main>
+  <script src="node_modules/@uswds/uswds/dist/js/uswds.min.js"></script>
+</body>
+</html>
