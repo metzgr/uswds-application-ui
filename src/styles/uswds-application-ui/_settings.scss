@@ -148,6 +148,19 @@ $flex-map: (
 );
 
 // -----------------------------------------------------------------------------
+// Flex grow/shrink maps for responsive generation
+// -----------------------------------------------------------------------------
+$flex-grow-map: (
+  0: 0,
+  1: 1
+);
+
+$flex-shrink-map: (
+  0: 0,
+  1: 1
+);
+
+// -----------------------------------------------------------------------------
 // Place utilities maps for responsive add-utility generation
 // -----------------------------------------------------------------------------
 
@@ -174,4 +187,171 @@ $place-self-map: (
   end:     end,
   center:  center,
   stretch: stretch
+);
+$order-map: (
+  first: -9999,
+  last:   9999,
+  none:      0,
+  1:         1,
+  2:         2,
+  3:         3,
+  4:         4,
+  5:         5,
+  6:         6,
+  7:         7,
+  8:         8,
+  9:         9,
+  10:       10,
+  11:       11,
+  12:       12
+);
+
+// -----------------------------------------------------------------------------
+// Grid utilities maps for responsive generation
+// -----------------------------------------------------------------------------
+$grid-cols-map: (
+  1:  repeat(1, minmax(0, 1fr)),
+  2:  repeat(2, minmax(0, 1fr)),
+  3:  repeat(3, minmax(0, 1fr)),
+  4:  repeat(4, minmax(0, 1fr)),
+  5:  repeat(5, minmax(0, 1fr)),
+  6:  repeat(6, minmax(0, 1fr)),
+  7:  repeat(7, minmax(0, 1fr)),
+  8:  repeat(8, minmax(0, 1fr)),
+  9:  repeat(9, minmax(0, 1fr)),
+  10: repeat(10, minmax(0, 1fr)),
+  11: repeat(11, minmax(0, 1fr)),
+  12: repeat(12, minmax(0, 1fr))
+);
+
+$grid-rows-map: (
+  1: repeat(1, minmax(0, 1fr)),
+  2: repeat(2, minmax(0, 1fr)),
+  3: repeat(3, minmax(0, 1fr)),
+  4: repeat(4, minmax(0, 1fr)),
+  5: repeat(5, minmax(0, 1fr)),
+  6: repeat(6, minmax(0, 1fr))
+);
+
+$col-span-map: (
+  1: span 1 / span 1,
+  2: span 2 / span 2,
+  3: span 3 / span 3,
+  4: span 4 / span 4,
+  5: span 5 / span 5,
+  6: span 6 / span 6,
+  7: span 7 / span 7,
+  8: span 8 / span 8,
+  9: span 9 / span 9,
+  10: span 10 / span 10,
+  11: span 11 / span 11,
+  12: span 12 / span 12
+);
+
+$row-span-map: (
+  1: span 1 / span 1,
+  2: span 2 / span 2,
+  3: span 3 / span 3,
+  4: span 4 / span 4,
+  5: span 5 / span 5,
+  6: span 6 / span 6
+);
+
+$grid-auto-flow-map: (
+  row:           row,
+  column:        column,
+  "row-dense":   row dense,
+  "column-dense": column dense
+);
+
+$auto-cols-map: (
+  auto:  auto,
+  min:   min-content,
+  max:   max-content,
+  fr:    minmax(0, 1fr)
+);
+
+$auto-rows-map: (
+  auto:  auto,
+  min:   min-content,
+  max:   max-content,
+  fr:    minmax(0, 1fr)
+);
+
+// -----------------------------------------------------------------------------
+// Display utilities map for responsive generation
+// -----------------------------------------------------------------------------
+$display-map: (
+  inline:               inline,
+  block:                block,
+  "inline-block":       inline-block,
+  "flow-root":          flow-root,
+  flex:                 flex,
+  "inline-flex":        inline-flex,
+  grid:                 grid,
+  "inline-grid":        inline-grid,
+  contents:             contents,
+  table:                table,
+  "inline-table":       inline-table,
+  "table-caption":      table-caption,
+  "table-cell":         table-cell,
+  "table-column":       table-column,
+  "table-column-group": table-column-group,
+  "table-footer-group": table-footer-group,
+  "table-header-group": table-header-group,
+  "table-row-group":    table-row-group,
+  "table-row":          table-row,
+  "list-item":          list-item,
+  none:                 none
+);
+
+// Build a map of negative values from your spacing scale
+$margin-negative-map: ();
+
+@each $key, $val in $theme-spacing-scale {
+  $margin-negative-map: map-merge(
+    $margin-negative-map,
+    ("neg-#{$key}": -#{$val})
+  );
+}
+
+// -----------------------------------------------------------------------------
+// Auto-margin map for responsive generation
+// -----------------------------------------------------------------------------
+$margin-auto-map: (
+  auto: auto
+);
+
+// -----------------------------------------------------------------------------
+// Box-sizing utilities map for responsive generation
+// -----------------------------------------------------------------------------
+$box-sizing-map: (
+  border:  border-box,
+  content: content-box
+);
+
+// -----------------------------------------------------------------------------
+// Object-fit utilities map for responsive generation
+// -----------------------------------------------------------------------------
+$object-fit-map: (
+  contain:     contain,
+  cover:       cover,
+  fill:        fill,
+  none:        none,
+  "scale-down": scale-down
+);
+
+// -----------------------------------------------------------------------------
+// Object-position utilities map for responsive generation
+// -----------------------------------------------------------------------------
+$object-position-map: (
+  "top-left":     top left,
+  top:            top,
+  "top-right":    top right,
+  left:           left,
+  center:         center,
+  right:          right,
+  "bottom-left":  bottom left,
+  bottom:         bottom,
+  "bottom-right": bottom right
 );

@@ -2,6 +2,6 @@
 @use "../../_settings" as *;
 
 // -----------------------------------------------------------------------------
-// Order utilities (responsive)
+// Box-sizing utilities (responsive)
 // -----------------------------------------------------------------------------
-@include add-utility("order", $order-map, "order", true);
+@include add-utility("box", $box-sizing-map, "box-sizing", true);

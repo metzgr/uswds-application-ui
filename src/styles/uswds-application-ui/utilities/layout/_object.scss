@@ -2,26 +2,11 @@
 @use "../../_settings" as *;
 
 // -----------------------------------------------------------------------------
-// Object-fit utilities
+// Object-fit utilities (responsive)
 // -----------------------------------------------------------------------------
-
-// Control how replaced content (e.g., <img>, <video>) is resized to fit its box.
-.object-contain     { object-fit: contain !important; }
-.object-cover       { object-fit: cover !important; }
-.object-fill        { object-fit: fill !important; }
-.object-none        { object-fit: none !important; }
-.object-scale-down  { object-fit: scale-down !important; }
+@include add-utility("object-fit",     $object-fit-map,     "object-fit",     true);
 
 // -----------------------------------------------------------------------------
-// Object-position utilities
+// Object-position utilities (responsive)
 // -----------------------------------------------------------------------------
-
-.object-top-left     { object-position: top left !important; }
-.object-top          { object-position: top !important; }
-.object-top-right    { object-position: top right !important; }
-.object-left         { object-position: left !important; }
-.object-center       { object-position: center !important; }
-.object-right        { object-position: right !important; }
-.object-bottom-left  { object-position: bottom left !important; }
-.object-bottom       { object-position: bottom !important; }
-.object-bottom-right { object-position: bottom right !important; }
+@include add-utility("object-position", $object-position-map, "object-position", true);

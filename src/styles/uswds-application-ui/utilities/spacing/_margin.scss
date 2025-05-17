@@ -14,32 +14,24 @@
 @include add-utility("margin-inline-end",   $theme-spacing-scale, "margin-inline-end",   true);
 
 // -----------------------------------------------------------------------------
-// Auto margins
+// Auto margins (responsive)
 // -----------------------------------------------------------------------------
-.margin-auto   { margin: auto !important; }
-.margin-x-auto { margin-inline: auto !important; }
-.margin-y-auto { margin-block: auto !important; }
+@include add-utility("margin-auto",          $margin-auto-map,     "margin",               true);
+@include add-utility("margin-x-auto",        $margin-auto-map,     "margin-inline",        true);
+@include add-utility("margin-y-auto",        $margin-auto-map,     "margin-block",         true);
 
 // -----------------------------------------------------------------------------
-// Negative margins (all directions, axes)
+// Negative margins (responsive)
 // -----------------------------------------------------------------------------
-@each $key, $val in $theme-spacing-scale {
-  .margin-neg-#{$key}      { margin: -#{$val}; }
-  .margin-top-neg-#{$key}  { margin-top: -#{$val}; }
-  .margin-right-neg-#{$key}{ margin-right: -#{$val}; }
-  .margin-bottom-neg-#{$key}{ margin-bottom: -#{$val}; }
-  .margin-left-neg-#{$key} { margin-left: -#{$val}; }
-  .margin-x-neg-#{$key}    { margin-inline: -#{$val}; }
-  .margin-y-neg-#{$key}    { margin-block: -#{$val}; }
-}
+@include add-utility("margin-neg",           $margin-negative-map, "margin",               true);
+@include add-utility("margin-x-neg",         $margin-negative-map, "margin-inline",        true);
+@include add-utility("margin-y-neg",         $margin-negative-map, "margin-block",         true);
 
 // -----------------------------------------------------------------------------
-// Explicit negative inline-start/end utilities
+// Explicit negative inline margins (responsive)
 // -----------------------------------------------------------------------------
-@each $key, $val in $theme-spacing-scale {
-  .margin-inline-start-neg-#{$key} { margin-inline-start: -#{$val}; }
-  .margin-inline-end-neg-#{$key}   { margin-inline-end:   -#{$val}; }
-}
+@include add-utility("margin-inline-start-neg", $margin-negative-map, "margin-inline-start", true);
+@include add-utility("margin-inline-end-neg",   $margin-negative-map, "margin-inline-end",   true);
 
 // -----------------------------------------------------------------------------
 // space-x-*  and  space-y-*
