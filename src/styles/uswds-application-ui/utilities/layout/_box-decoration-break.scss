@@ -1,0 +1,8 @@
+@use "uswds-core" as *;
+@use "../../_settings" as *;
+
+// -----------------------------------------------------------------------------
+// Box-decoration-break utilities (responsive)
+// -----------------------------------------------------------------------------
+
+@include add-utility("box-decoration-break", $box-decoration-break-map, "box-decoration-break", true);

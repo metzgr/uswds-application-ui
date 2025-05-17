@@ -355,3 +355,31 @@ $object-position-map: (
   bottom:         bottom,
   "bottom-right": bottom right
 );
+// -----------------------------------------------------------------------------
+// Z-index utilities map for responsive generation
+// -----------------------------------------------------------------------------
+$z-index-map: (
+  auto: auto,
+  0:    0,
+  10:   10,
+  20:   20,
+  30:   30,
+  40:   40,
+  50:   50
+);
+// -----------------------------------------------------------------------------
+// Aspect-ratio utilities map for responsive generation
+// -----------------------------------------------------------------------------
+$aspect-ratio-map: (
+  auto:   auto,
+  square: 1 / 1,
+  video:  16 / 9
+);
+
+// -----------------------------------------------------------------------------
+// Box-decoration-break utilities map for responsive generation
+// -----------------------------------------------------------------------------
+$box-decoration-break-map: (
+  clone: clone,
+  slice: slice
+);
