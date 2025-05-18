@@ -83,6 +83,15 @@ $theme-line-height-scale: (
   none:  1     // line-height-none utility
 );
 
+// Initialize the color palette map so it's defined before use
+$theme-color-palette: (
+  gray: (),
+  red: (),
+  indigo: (),
+  orange: (),
+  green: ()
+) !default;
+
 // grayscale brand palette (derived from USWDS gray tokens)
 $theme-color-base-lightest: map-get(map-get($theme-color-palette, gray), 5);
 $theme-color-base-light:   map-get(map-get($theme-color-palette, gray), 10);
