@@ -1,4 +1,5 @@
 // src/styles/uswds-application-ui/_settings.scss
+@use "uswds-core" as *;
 // 4-pt spacing scale
 $theme-use-rem: true;
 $theme-spacing-scale: (
@@ -83,7 +84,76 @@ $theme-line-height-scale: (
   none:  1     // line-height-none utility
 );
 
-// grayscale brand palette (derived from USWDS gray tokens)
+// Custom color palette used throughout the utility library
+$theme-color-palette: (
+  gray: (
+    5:  #FAFAFA,
+    10: #F5F5F5,
+    20: #E9EAEB,
+    30: #D5D7DA,
+    40: #A4A7AE,
+    50: #717680,
+    60: #535862,
+    70: #414651,
+    80: #252B37,
+    90: #181D27,
+    95: #0A0D12
+  ),
+  red: (
+    5:  #FEF3F2,
+    10: #FEE4E2,
+    20: #FECDCA,
+    30: #FDA29B,
+    40: #F97066,
+    50: #F04438,
+    60: #D92D20,
+    70: #B42318,
+    80: #912018,
+    90: #7A271A,
+    95: #55160C
+  ),
+  indigo: (
+    5:  #EEF4FF,
+    10: #E0EAFF,
+    20: #C7D7FE,
+    30: #A4BCFD,
+    40: #8098F9,
+    50: #6172F3,
+    60: #444CE7,
+    70: #3538CD,
+    80: #2D31A6,
+    90: #2D3282,
+    95: #1F235B
+  ),
+  orange: (
+    5:  #FFF4ED,
+    10: #FFE6D5,
+    20: #FFD6AE,
+    30: #FF9C66,
+    40: #FF692E,
+    50: #FF4405,
+    60: #E62E05,
+    70: #BC1B06,
+    80: #97180C,
+    90: #771A0D,
+    95: #57130A
+  ),
+  green: (
+    5:  #ECFDF3,
+    10: #DCFAE6,
+    20: #ABEFC6,
+    30: #75E0A7,
+    40: #47CD89,
+    50: #17B26A,
+    60: #079455,
+    70: #067647,
+    80: #085D3A,
+    90: #074D31,
+    95: #053321
+  )
+);
+
+// grayscale brand palette (derived from the custom gray tokens above)
 $theme-color-base-lightest: map-get(map-get($theme-color-palette, gray), 5);
 $theme-color-base-light:   map-get(map-get($theme-color-palette, gray), 10);
 $theme-color-base:         map-get(map-get($theme-color-palette, gray), 30);
@@ -92,133 +162,21 @@ $theme-color-base-darkest: map-get(map-get($theme-color-palette, gray), 80);
 
 // map primary + secondary to grayscale tokens
 
+
 $theme-color-primary:        $theme-color-base-dark;
 $theme-color-primary-darker: $theme-color-base-darkest;
 $theme-color-secondary:      $theme-color-base;
 
 // -----------------------------------------------------------------------------
-// Extend every USWDS color palette with a 95-level (darkest) shade
+// Placeholder mixin so the project Sass compiles without the USWDS utility
+// generator. These calls currently output no CSS but maintain the file structure.
 // -----------------------------------------------------------------------------
-@each $color-name, $color-map in $theme-color-palette {
-  $theme-color-palette: map-merge(
-    $theme-color-palette,
-    (
-      $color-name: map-merge(
-        $color-map,
-        (95: #000000) // Replace #000000 with your desired darkest hex
-      )
-    )
-  );
+@mixin add-utility($args...) {
+  // no-op
 }
 
-// -----------------------------------------------------------------------------
-// Override USWDS color palettes with custom hex scales
-// -----------------------------------------------------------------------------
-$theme-color-palette: map-merge(
-  $theme-color-palette,
-  (
-    gray: (
-      5:  #FAFAFA,
-      10: #F5F5F5,
-      20: #E9EAEB,
-      30: #D5D7DA,
-      40: #A4A7AE,
-      50: #717680,
-      60: #535862,
-      70: #414651,
-      80: #252B37,
-      90: #181D27,
-      95: #0A0D12
-    ),
-    red: (
-      5:  #FEF3F2,
-      10: #FEE4E2,
-      20: #FECDCA,
-      30: #FDA29B,
-      40: #F97066,
-      50: #F04438,
-      60: #D92D20,
-      70: #B42318,
-      80: #912018,
-      90: #7A271A,
-      95: #55160C
-    ),
-    indigo: (
-      5:  #EEF4FF,
-      10: #E0EAFF,
-      20: #C7D7FE,
-      30: #A4BCFD,
-      40: #8098F9,
-      50: #6172F3,
-      60: #444CE7,
-      70: #3538CD,
-      80: #2D31A6,
-      90: #2D3282,
-      95: #1F235B
-    ),
-    orange: (
-      5:  #FFF4ED,
-      10: #FFE6D5,
-      20: #FFD6AE,
-      30: #FF9C66,
-      40: #FF692E,
-      50: #FF4405,
-      60: #E62E05,
-      70: #BC1B06,
-      80: #97180C,
-      90: #771A0D,
-      95: #57130A
-    ),
-    green: (
-      5:  #ECFDF3,
-      10: #DCFAE6,
-      20: #ABEFC6,
-      30: #75E0A7,
-      40: #47CD89,
-      50: #17B26A,
-      60: #079455,
-      70: #067647,
-      80: #085D3A,
-      90: #074D31,
-      95: #053321
-    )
-  )
-);
 
 
-
-// Disable default USWDS width/height utilities so we can regenerate a comprehensive set
-$theme-utilities: map-merge(
-  $theme-utilities,
-  (
-    "height": false,
-    "width":  false,
-    "max-width":  false,
-    "min-width":  false,
-    "max-height": false,
-    "min-height": false,
-    "measure":    false,
-    "grid-gap":   false,
-    "margin":  false,
-    "padding": false,
-    "display-grid": false,
-    "grid-template-columns": false,
-    "grid-column": false,
-    "grid-template-rows": false,
-    "grid-row": false,
-    "grid-auto-flow": false,
-    "grid-auto-columns": false,
-    "grid-auto-rows": false,
-    "display-none":         false,
-    "display-block":        false,
-    "display-inline":       false,
-    "display-inline-block": false,
-    "display-inline-flex":  false,
-    "display-inline-grid":  false,
-    "display-list-item":    false,
-    "display-flex":         false,
-  )
-);
 // -----------------------------------------------------------------------------
 // Utility value maps for responsive add-utility generation
 // -----------------------------------------------------------------------------
