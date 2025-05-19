@@ -94,6 +94,38 @@ $theme-utility-spacing-suffixes: (
 ) !global;
 
 // -----------------------------------------------------------------------------
+// Custom UI Breakpoints
+// Replicating USWDS breakpoint structure for controlled ui- utility generation.
+// -----------------------------------------------------------------------------
+$custom-ui-breakpoints: (
+  "card":        160px,
+  "card-lg":     240px,
+  "mobile":      320px,
+  "mobile-lg":   480px,  // Default for utilities
+  "tablet":      640px,  // Default for utilities
+  "tablet-lg":   880px,
+  "desktop":     1024px, // Default for utilities
+  "desktop-lg":  1200px,
+  "widescreen":  1400px
+) !global;
+
+// List of breakpoint keys from $custom-ui-breakpoints to generate utilities for.
+// These correspond to the "Default: true" in the USWDS settings image.
+$custom-ui-utility-breakpoint-keys: (
+  "mobile-lg",
+  "tablet",
+  "desktop"
+) !global;
+
+// Map of breakpoint keys to their CSS class prefixes.
+$custom-ui-breakpoint-prefix-map: (
+  "mobile-lg": "mobile-lg:",
+  "tablet":    "tablet:",
+  "desktop":   "desktop:"
+  // Add other prefixes here if other breakpoints are added to $custom-ui-utility-breakpoint-keys
+) !global;
+
+// -----------------------------------------------------------------------------
 // Type scale (font-size) and line-height tokens
 // Uses spacing-scale tokens for matching values; add raw rems where needed.
 // -----------------------------------------------------------------------------

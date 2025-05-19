@@ -103,6 +103,59 @@
             </section>
             
             <!-- Custom Utility Test -->
+            <!-- UI Display Utilities Test -->
+            <section class="margin-bottom-4">
+                <h2 class="font-heading-xl">UI Display Utilities Test</h2>
+                <div class="bg-primary-lighter padding-2 margin-bottom-2">
+                    <p>Parent Div (default display: block)</p>
+                    <div class="bg-accent-cool-lighter padding-1 ui-display-inline-block margin-1">Child 1 (inline-block)</div>
+                    <div class="bg-accent-cool-lighter padding-1 ui-display-inline-block margin-1">Child 2 (inline-block)</div>
+                    <span class="bg-accent-warm-lighter padding-1 ui-display-block margin-top-1">Child 3 (block, was span)</span>
+                </div>
+                <div class="bg-secondary-lighter padding-2 margin-bottom-2 ui-display-flex">
+                    <div class="padding-1 margin-1 border-2px border-base-dark">Flex Item 1</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark">Flex Item 2</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark ui-display-none">Flex Item 3 (display-none)</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark">Flex Item 4</div>
+                </div>
+                <p>The text <strong class="ui-display-none">THIS TEXT SHOULD BE HIDDEN</strong> is using ui-display-none.</p>
+            </section>
+
+            <!-- UI Flexbox Utilities Test -->
+            <section class="margin-bottom-4">
+                <h2 class="font-heading-xl">UI Flexbox Utilities Test</h2>
+
+                <p class="margin-bottom-1"><strong>Flex Direction, Wrap, Align Items, Justify Content:</strong></p>
+                <div class="bg-primary-lighter padding-2 margin-bottom-2 ui-display-flex ui-flex-row ui-flex-wrap ui-items-start ui-justify-between" style="height: 150px;">
+                    <div class="padding-1 margin-1 border-2px border-base-dark ui-order-2">Item A (order 2)</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark ui-order-1">Item B (order 1)</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark">Item C</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark">Item D</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark ui-self-center">Item E (self-center)</div>
+                </div>
+
+                <p class="margin-bottom-1"><strong>Column, Centered, Spaced:</strong></p>
+                <div class="bg-secondary-lighter padding-2 margin-bottom-2 ui-display-flex ui-flex-col ui-items-center ui-justify-around" style="height: 200px;">
+                    <div class="padding-1 margin-1 border-2px border-base-dark">Col Item 1</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark ui-flex-grow">Col Item 2 (flex-grow)</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark">Col Item 3</div>
+                </div>
+                
+                <p class="margin-bottom-1"><strong>Place Content and Place Items (Example: place-content-center):</strong></p>
+                <div class="bg-accent-warm-lighter padding-2 margin-bottom-2 ui-display-flex ui-flex-wrap ui-place-content-center ui-items-center" style="height: 100px; width: 300px;">
+                    <div class="padding-1 m-1 border-2px border-base-dark">P1</div>
+                    <div class="padding-1 m-1 border-2px border-base-dark">P2</div>
+                </div>
+
+                <p class="margin-bottom-1"><strong>Simple Flex Children sizing:</strong></p>
+                <div class="bg-primary-lighter padding-2 margin-bottom-2 ui-display-flex">
+                    <div class="padding-1 margin-1 border-2px border-base-dark ui-flex-1">ui-flex-1</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark ui-flex-auto">ui-flex-auto</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark ui-flex-initial">ui-flex-initial</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark ui-flex-none" style="width: 100px;">ui-flex-none (fixed width)</div>
+                </div>
+            </section>
+
             <section class="margin-y-4 padding-y-4 border-top-1px border-base-lighter">
                 <h2 class="font-heading-xl">Custom Utility Test Area</h2>
                 <p>Use this space to test your custom utilities. For example:</p>
@@ -124,6 +177,44 @@
                 <div class="bg-base-lightest ui-margin-2 ui-padding-left-5px ui-padding-right-1">
                      <p>This box uses <code>ui-margin-2</code>, <code>ui-padding-left-5px</code>, and <code>ui-padding-right-1</code>.</p>
                 </div>
+
+                <!-- Responsive Utilities Test -->
+                <div class="tablet:ui-margin-4 bg-primary-lighter padding-2 margin-y-2">
+                    <p>This box (<code>tablet:ui-margin-4</code>) should have a margin of 1rem (4 units) on all sides when viewport is 640px or wider. Default padding-2 for visibility.</p>
+                </div>
+                <div class="tablet:ui-padding-4 bg-secondary-lighter margin-y-2">
+                    <p>This box (<code>tablet:ui-padding-4</code>) should have a padding of 1rem (4 units) on all sides when viewport is 640px or wider.</p>
+                </div>
+                <div class="mobile-lg:ui-margin-x-6 tablet:ui-margin-x-2 desktop:ui-margin-x-8 bg-accent-cool-lighter padding-2 margin-y-2">
+                    <p>This box tests multiple responsive margin-x classes: <code>mobile-lg:ui-margin-x-6</code>, <code>tablet:ui-margin-x-2</code>, <code>desktop:ui-margin-x-8</code>.</p>
+                </div>
+                <h3 class="font-heading-lg margin-top-4 margin-bottom-2">Responsive Utility Tests</h3>
+                
+                <p class="margin-bottom-1"><strong>Responsive Margin:</strong> Default margin, larger on tablet.</p>
+                <div class="bg-accent-cool-lighter padding-1 ui-margin-1 tablet:ui-margin-4">
+                    <code>ui-margin-1 tablet:ui-margin-4</code>
+                </div>
+
+                <p class="margin-top-2 margin-bottom-1"><strong>Responsive Display:</strong> Hidden by default, visible as block on desktop.</p>
+                <div class="bg-accent-warm-lighter padding-1 ui-display-none desktop:ui-display-block">
+                    <code>ui-display-none desktop:ui-display-block</code> (Visible on desktop only)
+                </div>
+
+                <p class="margin-top-2 margin-bottom-1"><strong>Responsive Flex Justify Content:</strong> Changes alignment across breakpoints.</p>
+                <div class="bg-primary-lighter padding-1 ui-display-flex ui-justify-start tablet:ui-justify-center desktop:ui-justify-between">
+                    <div class="padding-1 bg-white border-1px border-base">Item 1</div>
+                    <div class="padding-1 bg-white border-1px border-base margin-left-1">Item 2</div>
+                    <div class="padding-1 bg-white border-1px border-base margin-left-1">Item 3</div>
+                </div>
+                <p class="font-code-xs"><code>ui-display-flex ui-justify-start tablet:ui-justify-center desktop:ui-justify-between</code></p>
+
+                <p class="margin-top-2 margin-bottom-1"><strong>Responsive Flex Direction & Item Alignment:</strong> Changes direction and alignment.</p>
+                <div class="bg-secondary-lighter padding-1 ui-display-flex ui-flex-col mobile-lg:ui-flex-row tablet:ui-flex-col desktop:ui-flex-row ui-items-start tablet:ui-items-center desktop:ui-items-end" style="min-height: 150px;">
+                    <div class="padding-1 bg-white border-1px border-base margin-05">Box A</div>
+                    <div class="padding-1 bg-white border-1px border-base margin-05">Box B</div>
+                    <div class="padding-1 bg-white border-1px border-base margin-05">Box C</div>
+                </div>
+                <p class="font-code-xs"><code>ui-display-flex ui-flex-col mobile-lg:ui-flex-row tablet:ui-flex-col desktop:ui-flex-row ui-items-start tablet:ui-items-center desktop:ui-items-end</code></p>
             </section>
 
         </div>

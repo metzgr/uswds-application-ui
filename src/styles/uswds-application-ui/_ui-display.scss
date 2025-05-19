@@ -1,0 +1,46 @@
+// src/styles/uswds-application-ui/_ui-display.scss
+@use "sass:map";
+@use "uswds"; // Added for USWDS functions and mixins
+@use "./settings" as s;
+
+// --- Configuration for Custom UI Display Utilities ---
+
+$custom-ui-display-values: (
+  "none": none,
+  "inline": inline,
+  "inline-block": inline-block,
+  "block": block,
+  "flex": flex,
+  "inline-flex": inline-flex,
+  "grid": grid,
+  "inline-grid": inline-grid,
+  "table": table,
+  "table-row": table-row,
+  "table-cell": table-cell,
+  "contents": contents
+);
+
+// --- Mixin to Generate Custom UI Display BASE Utilities ---
+@mixin generate-custom-ui-display-base-utilities {
+  @each $key, $value in $custom-ui-display-values {
+    .ui-display-#{$key} {
+      display: #{$value} !important;
+    }
+  }
+}
+
+// --- Mixin to Generate Custom UI Display RESPONSIVE Utilities ---
+@mixin generate-custom-ui-display-responsive-utilities {
+  @each $bp-key in s.$custom-ui-utility-breakpoint-keys {
+    @media (min-width: #{map.get(s.$custom-ui-breakpoints, $bp-key)}) {
+      $responsive-class-prefix: map.get(s.$custom-ui-breakpoint-prefix-map, $bp-key);
+      @each $key, $value in $custom-ui-display-values {
+        .#{$responsive-class-prefix}ui-display-#{$key} {
+          display: #{$value} !important;
+        }
+      }
+    }
+  }
+}
+
+// Mixins are now defined. They will be included from style.scss to control order.

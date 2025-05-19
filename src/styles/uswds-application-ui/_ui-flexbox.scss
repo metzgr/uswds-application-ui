@@ -1,0 +1,241 @@
+// src/styles/uswds-application-ui/_ui-flexbox.scss
+@use "sass:map";
+@use "sass:list";
+@use "sass:string";
+@use "uswds"; // Added for USWDS functions and mixins
+@use "./settings" as s;
+
+// --- Configuration for Custom UI Flexbox Utilities ---
+
+$custom-ui-flex-direction-values: (
+  "row": row,
+  "row-reverse": row-reverse,
+  "col": column,
+  "col-reverse": column-reverse
+);
+
+$custom-ui-flex-wrap-values: (
+  "wrap": wrap,
+  "nowrap": nowrap,
+  "wrap-reverse": wrap-reverse
+);
+
+$custom-ui-align-items-values: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "baseline": baseline,
+  "stretch": stretch
+);
+
+$custom-ui-align-content-values: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "between": space-between,
+  "around": space-around,
+  "evenly": space-evenly,
+  "stretch": stretch
+);
+
+$custom-ui-align-self-values: (
+  "auto": auto,
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "baseline": baseline,
+  "stretch": stretch
+);
+
+$custom-ui-justify-content-values: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "between": space-between,
+  "around": space-around,
+  "evenly": space-evenly
+);
+
+$custom-ui-justify-items-values: (
+  "start": start,
+  "end": end,
+  "center": center,
+  "stretch": stretch,
+  "self-start": self-start,
+  "self-end": self-end,
+  "left": left,
+  "right": right
+);
+
+$custom-ui-justify-self-values: (
+  "auto": auto,
+  "start": start,
+  "end": end,
+  "center": center,
+  "stretch": stretch,
+  "self-start": self-start,
+  "self-end": self-end
+);
+
+$custom-ui-place-content-values: (
+  "center": "center center",
+  "start": "flex-start flex-start",
+  "end": "flex-end flex-end",
+  "between-center": "space-between center",
+  "around-center": "space-around center",
+  "evenly-center": "space-evenly center",
+  "stretch-start": "stretch flex-start"
+);
+
+$custom-ui-place-items-values: (
+  "center": "center center",
+  "start": "flex-start flex-start",
+  "end": "flex-end flex-end",
+  "stretch": "stretch stretch"
+);
+
+$custom-ui-place-self-values: (
+  "auto": "auto auto",
+  "center": "center center",
+  "start": "flex-start flex-start",
+  "end": "flex-end flex-end",
+  "stretch": "stretch stretch"
+);
+
+$custom-ui-order-values: (
+  "first": -9999,
+  "last": 9999,
+  "none": 0
+);
+$custom-ui-order-max: 12;
+
+$custom-ui-simple-flex-values: (
+  "1": "1 1 0%",
+  "auto": "1 1 auto",
+  "initial": "0 1 auto",
+  "none": "none"
+);
+
+// --- Helper Mixin for Map-based Flexbox Properties ---
+@mixin _generate-flexbox-map-rules($class-prefix, $property, $values-map, $is-base-pass: true) {
+  @if $is-base-pass == true {
+    // Base classes
+    @each $key, $value in $values-map {
+      .ui-#{$class-prefix}-#{$key} {
+        #{$property}: #{$value} !important;
+      }
+    }
+  } @else {
+    // Responsive classes
+    @each $bp-key in s.$custom-ui-utility-breakpoint-keys {
+      @media (min-width: #{map.get(s.$custom-ui-breakpoints, $bp-key)}) {
+        $responsive-prefix: map.get(s.$custom-ui-breakpoint-prefix-map, $bp-key);
+        @each $key, $value in $values-map {
+          .#{$responsive-prefix}ui-#{$class-prefix}-#{$key} {
+            #{$property}: #{$value} !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// --- Helper Mixin for Numeric Order Flexbox Properties ---
+@mixin _generate-flexbox-order-numeric-rules($is-base-pass: true) {
+  @if $is-base-pass == true {
+    // Base numeric order
+    @for $i from 1 through $custom-ui-order-max {
+      .ui-order-#{$i} {
+        order: #{$i} !important;
+      }
+    }
+  } @else {
+    // Responsive numeric order
+    @each $bp-key in s.$custom-ui-utility-breakpoint-keys {
+      @media (min-width: #{map.get(s.$custom-ui-breakpoints, $bp-key)}) {
+        $responsive-class-prefix: map.get(s.$custom-ui-breakpoint-prefix-map, $bp-key);
+        @for $i from 1 through $custom-ui-order-max {
+          .#{$responsive-class-prefix}ui-order-#{$i} {
+            order: #{$i} !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// --- Helper Mixin for Flex Grow/Shrink Properties ---
+@mixin _generate-flexbox-grow-shrink-rules($is-base-pass: true) {
+  @if $is-base-pass == true {
+    // Base grow/shrink
+    .ui-flex-grow { flex-grow: 1 !important; }
+    .ui-flex-grow-0 { flex-grow: 0 !important; }
+    .ui-flex-shrink { flex-shrink: 1 !important; }
+    .ui-flex-shrink-0 { flex-shrink: 0 !important; }
+  } @else {
+    // Responsive grow/shrink
+    @each $bp-key in s.$custom-ui-utility-breakpoint-keys {
+      @media (min-width: #{map.get(s.$custom-ui-breakpoints, $bp-key)}) {
+        $responsive-class-prefix: map.get(s.$custom-ui-breakpoint-prefix-map, $bp-key);
+        .#{$responsive-class-prefix}ui-flex-grow { flex-grow: 1 !important; }
+        .#{$responsive-class-prefix}ui-flex-grow-0 { flex-grow: 0 !important; }
+        .#{$responsive-class-prefix}ui-flex-shrink { flex-shrink: 1 !important; }
+        .#{$responsive-class-prefix}ui-flex-shrink-0 { flex-shrink: 0 !important; }
+      }
+    }
+  }
+}
+
+// --- Mixin to Generate Custom UI Flexbox BASE Utilities ---
+@mixin generate-custom-ui-flexbox-base-utilities {
+  // Map-based properties (direction, wrap, align, justify, place)
+  @include _generate-flexbox-map-rules("flex", "flex-direction", $custom-ui-flex-direction-values, true);
+  @include _generate-flexbox-map-rules("flex", "flex-wrap", $custom-ui-flex-wrap-values, true);
+  @include _generate-flexbox-map-rules("items", "align-items", $custom-ui-align-items-values, true);
+  @include _generate-flexbox-map-rules("content", "align-content", $custom-ui-align-content-values, true);
+  @include _generate-flexbox-map-rules("self", "align-self", $custom-ui-align-self-values, true);
+  @include _generate-flexbox-map-rules("justify", "justify-content", $custom-ui-justify-content-values, true);
+  @include _generate-flexbox-map-rules("justify-items", "justify-items", $custom-ui-justify-items-values, true);
+  @include _generate-flexbox-map-rules("justify-self", "justify-self", $custom-ui-justify-self-values, true);
+  @include _generate-flexbox-map-rules("place-content", "place-content", $custom-ui-place-content-values, true);
+  @include _generate-flexbox-map-rules("place-items", "place-items", $custom-ui-place-items-values, true);
+  @include _generate-flexbox-map-rules("place-self", "place-self", $custom-ui-place-self-values, true);
+  // Order (keyword-based)
+  @include _generate-flexbox-map-rules("order", "order", $custom-ui-order-values, true);
+  // Basic flex shorthand utilities
+  @include _generate-flexbox-map-rules("flex", "flex", $custom-ui-simple-flex-values, true);
+
+  // Numeric Order
+  @include _generate-flexbox-order-numeric-rules(true);
+
+  // Flex Grow/Shrink
+  @include _generate-flexbox-grow-shrink-rules(true);
+}
+
+// --- Mixin to Generate Custom UI Flexbox RESPONSIVE Utilities ---
+@mixin generate-custom-ui-flexbox-responsive-utilities {
+  // Map-based properties (direction, wrap, align, justify, place)
+  @include _generate-flexbox-map-rules("flex", "flex-direction", $custom-ui-flex-direction-values, false);
+  @include _generate-flexbox-map-rules("flex", "flex-wrap", $custom-ui-flex-wrap-values, false);
+  @include _generate-flexbox-map-rules("items", "align-items", $custom-ui-align-items-values, false);
+  @include _generate-flexbox-map-rules("content", "align-content", $custom-ui-align-content-values, false);
+  @include _generate-flexbox-map-rules("self", "align-self", $custom-ui-align-self-values, false);
+  @include _generate-flexbox-map-rules("justify", "justify-content", $custom-ui-justify-content-values, false);
+  @include _generate-flexbox-map-rules("justify-items", "justify-items", $custom-ui-justify-items-values, false);
+  @include _generate-flexbox-map-rules("justify-self", "justify-self", $custom-ui-justify-self-values, false);
+  @include _generate-flexbox-map-rules("place-content", "place-content", $custom-ui-place-content-values, false);
+  @include _generate-flexbox-map-rules("place-items", "place-items", $custom-ui-place-items-values, false);
+  @include _generate-flexbox-map-rules("place-self", "place-self", $custom-ui-place-self-values, false);
+  // Order (keyword-based)
+  @include _generate-flexbox-map-rules("order", "order", $custom-ui-order-values, false);
+  // Basic flex shorthand utilities
+  @include _generate-flexbox-map-rules("flex", "flex", $custom-ui-simple-flex-values, false);
+
+  // Numeric Order
+  @include _generate-flexbox-order-numeric-rules(false);
+
+  // Flex Grow/Shrink
+  @include _generate-flexbox-grow-shrink-rules(false);
+}
+
+// Mixins are now defined. They will be included from style.scss to control order.

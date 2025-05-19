@@ -1,0 +1,6 @@
+// src/styles/uswds-application-ui/utilities/_index.scss
+// This file forwards all active utility partials from its subdirectories.
+
+@forward "./typography/font";
+@forward "./layout/display";
+@forward "./flexbox-grid/grid";

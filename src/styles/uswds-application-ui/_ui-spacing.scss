@@ -1,146 +1,185 @@
-// src/styles/uswds-application-ui/_custom-spacing-utilities.scss
+// src/styles/uswds-application-ui/_ui-spacing.scss
 @use "sass:map";
 @use "sass:list";
-@use "sass:math"; // For math.div
+@use "sass:string";
+@use "sass:math";
+@use "./settings" as s;
+@use "uswds"; // Added for USWDS functions and mixins
 
-// --- Configuration for Custom Spacing Utilities ---
+// --- Configuration for Custom UI Spacing Utilities ---
+$base-font-size-px: 16; // Standard base font size in pixels. Used as default for px-to-rem.
 
-// Base unit for consistent rem conversion (assuming root font-size of 16px)
-$custom-spacing-root-font-size: 16px !default;
+// Function to convert pixel values to rem, ensuring unitless input for calculations
+@function px-to-rem($px-value, $current-base-font-size-px: $base-font-size-px) {
+  // Remove units if present
+  $px-value-unitless: if(unitless($px-value), $px-value, $px-value / ($px-value * 0 + 1));
+  $current-base-font-size-px-unitless: if(unitless($current-base-font-size-px), $current-base-font-size-px, $current-base-font-size-px / ($current-base-font-size-px * 0 + 1));
 
-// The custom 4-point spacing scale.
-// Keys are suffixes, values are the desired *pixel* values.
-// These will be converted to rems.
-$custom-spacing-px-scale: (
-  "0":    0,
-  "1px":  1,    // 1px
-  "05":   2,    // 2px (0.5 * 4px base)
-  "1":    4,    // 4px (1 * 4px base)
-  "5px":  5,    // 5px
-  "105":  6,    // 6px (1.5 * 4px base)
-  "2":    8,    // 8px (2 * 4px base)
-  "205":  10,   // 10px (2.5 * 4px base)
-  "3":    12,   // 12px
-  "4":    16,   // 16px
-  "5":    20,   // 20px
-  "6":    24,   // 24px
-  "7":    28,   // 28px
-  "8":    32,   // 32px
-  "9":    36,   // 36px
-  "10":   40,   // 40px
-  "11":   44,
-  "12":   48,
-  "14":   56,
-  "16":   64,
-  "20":   80,
-  "24":   96,
-  "28":   112,
-  "32":   128,
-  "36":   144,
-  "40":   160,
-  "48":   192,
-  // Negative values
-  "neg-1px": -1,
-  "neg-05":  -2,
-  "neg-1":   -4,
-  "neg-2":   -8,
-  "neg-3":   -12,
-  "neg-4":   -16
-);
-
-// Suffixes from the scale for which to generate utilities.
-$custom-spacing-generate-suffixes: map.keys($custom-spacing-px-scale);
-
-// CSS properties and their 'ui-' prefixed class segments
-$custom-spacing-properties: (
-  "padding": "p",
-  "padding-top": "pt",
-  "padding-right": "pr",
-  "padding-bottom": "pb",
-  "padding-left": "pl",
-  "padding-x": ("pl", "pr"),
-  "padding-y": ("pt", "pb"),
-  "margin": "m",
-  "margin-top": "mt",
-  "margin-right": "mr",
-  "margin-bottom": "mb",
-  "margin-left": "ml",
-  "margin-x": ("ml", "mr"),
-  "margin-y": ("mt", "mb"),
-  "gap": "gap",
-  "row-gap": "row-gap",
-  "column-gap": "col-gap"
-);
-
-// --- Utility Generation Loop ---
-
-@function px-to-rem($pixels, $root-font-size-px: $custom-spacing-root-font-size) {
-  // Ensure $root-font-size-px is a pixel value, then strip its unit for calculation
-  $root-numeric: 0;
-  @if unit($root-font-size-px) == "px" {
-    $root-numeric: math.div($root-font-size-px, 1px); // Get unitless number
-  } @else if unitless($root-font-size-px) {
-    $root-numeric: $root-font-size-px; // Already unitless
-  } @else {
-    @error "Root font size for px-to-rem must be in px or unitless. Got #{$root-font-size-px}.";
+  @if $current-base-font-size-px-unitless == 0 {
+    @error "Base font size cannot be zero.";
   }
-
-  @if unitless($pixels) { // If $pixels is unitless, assume it's a px value
-    @if $pixels == 0 {
-      @return 0rem;
-    }
-    @return math.div($pixels, $root-numeric) * 1rem;
-  } @else if unit($pixels) == "px" { // If $pixels is in px
-    @if $pixels == 0px {
-      @return 0rem;
-    }
-    // Divide the numeric part of $pixels by $root-numeric
-    @return math.div(math.div($pixels, 1px), $root-numeric) * 1rem;
-  } @else {
-    @error "Value to convert must be in px or unitless. Got #{$pixels}.";
-  }
+  @return math.div($px-value-unitless, $current-base-font-size-px-unitless) * 1rem;
 }
 
-@mixin generate-custom-ui-spacing-utilities {
-  @each $css_property_key, $value_unused in $custom-spacing-properties {
-    // $css_property_key will be like "padding", "padding-left", "padding-x", "margin-x", "gap"
-    // $value_unused (original value from $custom-spacing-properties like "p", ("pl", "pr")) is not directly used for class naming here.
+// Custom absolute value function
+@function abs($number) {
+  @if $number < 0 {
+    @return -$number;
+  }
+  @return $number;
+}
 
-    @each $suffix_key in $custom-spacing-generate-suffixes {
-      $pixel_value: map.get($custom-spacing-px-scale, $suffix_key);
-      $rem_value: px-to-rem($pixel_value);
+// Custom pixel-based spacing scale. Values are in pixels.
+$custom-spacing-px-scale: (
+  "0":    0,
+  "1px":  1,
+  "05":   2,    // e.g., 2px
+  "1":    4,    // e.g., 4px
+  "2":    8,
+  "3":    12,
+  "4":    16,
+  "5":    20,
+  "6":    24,
+  "7":    28,
+  "8":    32,
+  "9":    36,
+  "10":   40,
+  // Negative values for margins
+  "neg-05": -2,
+  "neg-1":  -4,
+  "neg-2":  -8,
+  "neg-3":  -12,
+  "neg-4":  -16,
+  "neg-5":  -20,
+  "neg-6":  -24,
+  "neg-7":  -28,
+  "neg-8":  -32,
+  "neg-9":  -36,
+  "neg-10": -40
+);
 
-      // New class naming convention: ui-[property_key]-[suffix_key]
-      // e.g., ui-padding-1, ui-padding-left-1px, ui-margin-x-4, ui-gap-2
-      $class_name: "ui-#{$css_property_key}-#{$suffix_key}";
+// Define which properties to generate utilities for
+$custom-spacing-properties: (
+  padding: (
+    property: "padding",
+    sides: (
+      "": "", // All sides
+      "-top": "-top",
+      "-bottom": "-bottom",
+      "-left": "-left",
+      "-right": "-right",
+      "-x": "-left" "-right",
+      "-y": "-top" "-bottom"
+    )
+  ),
+  margin: (
+    property: "margin",
+    sides: (
+      "": "", // All sides
+      "-top": "-top",
+      "-bottom": "-bottom",
+      "-left": "-left",
+      "-right": "-right",
+      "-x": "-left" "-right",
+      "-y": "-top" "-bottom"
+    )
+  ),
+  gap: (
+    property: "gap",
+    isSimple: true // Indicates no sides, direct property-value
+  ),
+  "gap-x": (
+    property: "column-gap",
+    isSimple: true
+  ),
+  "gap-y": (
+    property: "row-gap",
+    isSimple: true
+  )
+);
 
-      .#{$class_name} {
-        @if $css_property_key == "padding-x" {
-          padding-left: #{$rem_value} !important;
-          padding-right: #{$rem_value} !important;
-        } @else if $css_property_key == "padding-y" {
-          padding-top: #{$rem_value} !important;
-          padding-bottom: #{$rem_value} !important;
-        } @else if $css_property_key == "margin-x" {
-          margin-left: #{$rem_value} !important;
-          margin-right: #{$rem_value} !important;
-        } @else if $css_property_key == "margin-y" {
-          margin-top: #{$rem_value} !important;
-          margin-bottom: #{$rem_value} !important;
-        } @else {
-          // Handles direct properties like "padding", "padding-left", "margin-top", "gap", "row-gap", "column-gap"
-          #{$css_property_key}: #{$rem_value} !important;
+// --- Helper Mixin for Rule Generation ---
+@mixin _generate-spacing-rules-for-scale($util-prefix, $prop-config, $scale-key, $scale-val-px, $is-base-pass: true) {
+  $base-property: map.get($prop-config, "property");
+  $is-simple-prop: map.get($prop-config, "isSimple");
+  $is-negative-value: $scale-val-px < 0;
+
+  @if $is-negative-value and ($util-prefix == "padding" or string.index($util-prefix, "gap")) {
+    // Skip negative padding and negative gap
+  } @else {
+    $rem-value: null;
+    @if $is-negative-value {
+      $rem-value: calc(#{px-to-rem(abs($scale-val-px))} * -1);
+    } @else {
+      $rem-value: px-to-rem($scale-val-px);
+    }
+
+    @if $is-base-pass == true {
+      // Default (mobile-first) classes
+      @if $is-simple-prop {
+        .ui-#{$util-prefix}-#{$scale-key} {
+          #{$base-property}: #{$rem-value} !important;
+        }
+      } @else {
+        $sides-map: map.get($prop-config, "sides");
+        @each $side-key, $side-props in $sides-map {
+          .ui-#{$util-prefix}#{$side-key}-#{$scale-key} {
+            @if type-of($side-props) == "list" {
+              @each $side-prop-item in $side-props {
+                #{$base-property}#{$side-prop-item}: #{$rem-value} !important;
+              }
+            } @else {
+              #{$base-property}#{$side-props}: #{$rem-value} !important;
+            }
+          }
+        }
+      }
+    } @else {
+      // Responsive classes using custom breakpoints
+      @each $bp-key in s.$custom-ui-utility-breakpoint-keys {
+        @media (min-width: #{map.get(s.$custom-ui-breakpoints, $bp-key)}) {
+          $responsive-class-prefix: map.get(s.$custom-ui-breakpoint-prefix-map, $bp-key);
+          @if $is-simple-prop {
+            .#{$responsive-class-prefix}ui-#{$util-prefix}-#{$scale-key} {
+              #{$base-property}: #{$rem-value} !important;
+            }
+          } @else {
+            $sides-map: map.get($prop-config, "sides");
+            @each $side-key, $side-props in $sides-map {
+              .#{$responsive-class-prefix}ui-#{$util-prefix}#{$side-key}-#{$scale-key} {
+                @if type-of($side-props) == "list" {
+                  @each $side-prop-item in $side-props {
+                    #{$base-property}#{$side-prop-item}: #{$rem-value} !important;
+                  }
+                } @else {
+                  #{$base-property}#{$side-props}: #{$rem-value} !important;
+                }
+              }
+            }
+          }
         }
       }
     }
   }
 }
 
-@include generate-custom-ui-spacing-utilities;
-
-// --- Cascade Debug Test ---
-.cascade-debug-test {
-  color: hotpink !important;
-  border: 1px solid lime !important;
+// --- Mixin to Generate Custom UI Spacing BASE Utilities ---
+@mixin generate-custom-ui-spacing-base-utilities {
+  @each $util-prefix, $prop-config in $custom-spacing-properties {
+    @each $scale-key, $scale-val-px in $custom-spacing-px-scale {
+      @include _generate-spacing-rules-for-scale($util-prefix, $prop-config, $scale-key, $scale-val-px, true);
+    }
+  }
 }
+
+// --- Mixin to Generate Custom UI Spacing RESPONSIVE Utilities ---
+@mixin generate-custom-ui-spacing-responsive-utilities {
+  @each $util-prefix, $prop-config in $custom-spacing-properties {
+    @each $scale-key, $scale-val-px in $custom-spacing-px-scale {
+      @include _generate-spacing-rules-for-scale($util-prefix, $prop-config, $scale-key, $scale-val-px, false);
+    }
+  }
+}
+
+// REMOVED: @include generate-custom-ui-spacing-utilities; (This line is intentionally removed)
 
