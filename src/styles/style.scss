@@ -50,10 +50,11 @@
 // @use also includes their CSS. The order of @use can matter if both modules output CSS
 // directly without an @include, but here we control CSS output via @include.
 
+@use "uswds"; // USWDS core. This makes USWDS mixins/functions available AND outputs USWDS CSS.
 @use "./uswds-application-ui/ui-spacing" as ui_spacing;
 @use "./uswds-application-ui/ui-display" as ui_display;     // Our custom ui-display module
 @use "./uswds-application-ui/ui-flexbox" as ui_flexbox;    // Our custom ui-flexbox module
-@use "uswds"; // USWDS core. This makes USWDS mixins/functions available AND outputs USWDS CSS.
+@use "./uswds-application-ui/ui-typography" as ui_typography; // Our custom ui-typography module
 
 
 // --- 3. INCLUDE MIXINS TO GENERATE CSS IN SPECIFIC ORDER --- 
@@ -64,6 +65,7 @@
 @include ui_spacing.generate-custom-ui-spacing-base-utilities;
 @include ui_display.generate-custom-ui-display-base-utilities;
 @include ui_flexbox.generate-custom-ui-flexbox-base-utilities;
+@include ui_typography.generate-custom-ui-typography-base-utilities;
 
 // Second, USWDS CSS is already included by the `@use "uswds";` directive above.
 // This includes USWDS components and its own utility classes, which will appear
@@ -76,6 +78,7 @@
 @include ui_spacing.generate-custom-ui-spacing-responsive-utilities;
 @include ui_display.generate-custom-ui-display-responsive-utilities;
 @include ui_flexbox.generate-custom-ui-flexbox-responsive-utilities;
+@include ui_typography.generate-custom-ui-typography-responsive-utilities;
 
 
 // --- Information on CSS output order with @use and @include --- 

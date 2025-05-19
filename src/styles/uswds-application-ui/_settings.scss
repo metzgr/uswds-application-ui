@@ -163,6 +163,19 @@ $theme-line-height-scale: (
 );
 
 // -----------------------------------------------------------------------------
+// Font Family Tokens
+// -----------------------------------------------------------------------------
+$theme-font-family-sans: (
+  "system-sans": (system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")
+);
+$theme-font-family-serif: (
+  "system-serif": ("Georgia", "Cambria", "Times New Roman", "Times", serif)
+);
+$theme-font-family-mono: (
+  "system-mono": (SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace)
+);
+
+// -----------------------------------------------------------------------------
 // Override USWDS color palettes with custom hex scales
 // This definition must come BEFORE variables that use it (e.g., $theme-color-base-lightest).
 // These definitions will be used by USWDS when it initializes.

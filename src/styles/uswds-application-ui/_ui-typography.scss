@@ -1,0 +1,145 @@
+// src/styles/uswds-application-ui/_ui-typography.scss
+@use "sass:map";
+@use "./settings" as s;
+@use "uswds" as u;
+
+// --- Configuration for Custom UI Typography Utilities ---
+// (Will use maps from _settings.scss like $theme-type-scale, $theme-line-height-scale, etc.)
+
+// --- Mixin to Generate Custom UI Typography BASE Utilities ---
+@mixin generate-custom-ui-typography-base-utilities {
+  // Font size utilities (e.g., .ui-text-xs, .ui-text-sm, etc.)
+  @each $key, $value in s.$theme-type-scale {
+    .ui-text-#{$key} {
+      font-size: u.px-to-rem($value * s.$theme-spacing-base-unit) !important;
+    }
+  }
+
+  // Line height utilities (e.g., .ui-leading-1, .ui-leading-2, etc.)
+  // Assuming s.$theme-line-height-scale directly provides the numeric multiplier for calc(var(--spacing) * X)
+  // or provides absolute values. We'll assume absolute values for now, matching USWDS approach.
+  @each $key, $value in s.$theme-line-height-scale {
+    .ui-leading-#{$key} {
+      line-height: #{$value} !important;
+    }
+  }
+
+  // Font family utilities (e.g., .ui-font-sans, .ui-font-serif, .ui-font-mono)
+  // These will take the first font stack defined in each theme map.
+  // To use a specific named stack (e.g., 'system-sans'), you'd need a utility like .ui-font-system-sans
+
+  @if map.has-key(s.$theme-font-family-sans, "system-sans") {
+    .ui-font-sans {
+      font-family: map.get(s.$theme-font-family-sans, "system-sans") !important;
+    }
+  }
+  // Allow for a generic 'sans' key if 'system-sans' isn't the primary one desired for .ui-font-sans
+  @else if map.has-key(s.$theme-font-family-sans, "sans") {
+    .ui-font-sans {
+      font-family: map.get(s.$theme-font-family-sans, "sans") !important;
+    }
+  }
+
+  @if map.has-key(s.$theme-font-family-serif, "system-serif") {
+    .ui-font-serif {
+      font-family: map.get(s.$theme-font-family-serif, "system-serif") !important;
+    }
+  }
+  @else if map.has-key(s.$theme-font-family-serif, "serif") {
+    .ui-font-serif {
+      font-family: map.get(s.$theme-font-family-serif, "serif") !important;
+    }
+  }
+
+  @if map.has-key(s.$theme-font-family-mono, "system-mono") {
+    .ui-font-mono {
+      font-family: map.get(s.$theme-font-family-mono, "system-mono") !important;
+    }
+  }
+  @else if map.has-key(s.$theme-font-family-mono, "mono") {
+    .ui-font-mono {
+      font-family: map.get(s.$theme-font-family-mono, "mono") !important;
+    }
+  }
+
+  // Future: Add utilities for text-align, font-weight, font-style etc. if needed.
+  // Example for text-align:
+  // $text-alignments: (
+  //   "left": left,
+  //   "center": center,
+  //   "right": right,
+  //   "justify": justify
+  // );
+  // @each $key, $value in $text-alignments {
+  //   .ui-text-#{$key} {
+  //     text-align: #{$value} !important;
+  //   }
+  // }
+}
+
+// --- Mixin to Generate Custom UI Typography RESPONSIVE Utilities ---
+@mixin generate-custom-ui-typography-responsive-utilities {
+  @each $bp-key in s.$custom-ui-utility-breakpoint-keys {
+    $prefix: map.get(s.$custom-ui-breakpoint-prefix-map, $bp-key);
+    $min-width: map.get(s.$custom-ui-breakpoints, $bp-key);
+
+    @if $prefix != null and $min-width != null {
+      @media (min-width: #{$min-width}) {
+        // Responsive Font size utilities
+        @each $key, $value in s.$theme-type-scale {
+          .#{$prefix}ui-text-#{$key} {
+            font-size: u.px-to-rem($value * s.$theme-spacing-base-unit) !important;
+          }
+        }
+
+        // Responsive Line height utilities
+        @each $key, $value in s.$theme-line-height-scale {
+          .#{$prefix}ui-leading-#{$key} {
+            line-height: #{$value} !important;
+          }
+        }
+
+        // Responsive Font family utilities
+        @if map.has-key(s.$theme-font-family-sans, "system-sans") {
+          .#{$prefix}ui-font-sans {
+            font-family: map.get(s.$theme-font-family-sans, "system-sans") !important;
+          }
+        }
+        @else if map.has-key(s.$theme-font-family-sans, "sans") {
+          .#{$prefix}ui-font-sans {
+            font-family: map.get(s.$theme-font-family-sans, "sans") !important;
+          }
+        }
+
+        @if map.has-key(s.$theme-font-family-serif, "system-serif") {
+          .#{$prefix}ui-font-serif {
+            font-family: map.get(s.$theme-font-family-serif, "system-serif") !important;
+          }
+        }
+        @else if map.has-key(s.$theme-font-family-serif, "serif") {
+          .#{$prefix}ui-font-serif {
+            font-family: map.get(s.$theme-font-family-serif, "serif") !important;
+          }
+        }
+
+        @if map.has-key(s.$theme-font-family-mono, "system-mono") {
+          .#{$prefix}ui-font-mono {
+            font-family: map.get(s.$theme-font-family-mono, "system-mono") !important;
+          }
+        }
+        @else if map.has-key(s.$theme-font-family-mono, "mono") {
+          .#{$prefix}ui-font-mono {
+            font-family: map.get(s.$theme-font-family-mono, "mono") !important;
+          }
+        }
+
+        // Future: Responsive text-align, font-weight, font-style etc.
+        // @each $key, $value in $text-alignments {
+        //   .#{$prefix}ui-text-#{$key} {
+        //     text-align: #{$value} !important;
+        //   }
+        // }
+      }
+    }
+  }
+}

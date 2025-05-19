@@ -37805,6 +37805,126 @@ example:
   flex-shrink: 0 !important;
 }
 
+.ui-text-xs {
+  font-size: 0.75rem !important;
+}
+
+.ui-text-sm {
+  font-size: 0.88rem !important;
+}
+
+.ui-text-md {
+  font-size: 1rem !important;
+}
+
+.ui-text-lg {
+  font-size: 1.13rem !important;
+}
+
+.ui-text-xl {
+  font-size: 1.25rem !important;
+}
+
+.ui-text-2xl {
+  font-size: 1.5rem !important;
+}
+
+.ui-text-3xl {
+  font-size: 1.88rem !important;
+}
+
+.ui-text-4xl {
+  font-size: 2.25rem !important;
+}
+
+.ui-text-5xl {
+  font-size: 3rem !important;
+}
+
+.ui-text-6xl {
+  font-size: 4rem !important;
+}
+
+.ui-text-7xl {
+  font-size: 4.5rem !important;
+}
+
+.ui-text-8xl {
+  font-size: 6rem !important;
+}
+
+.ui-text-9xl {
+  font-size: 8rem !important;
+}
+
+.ui-leading-xs {
+  line-height: 1.3333333333 !important;
+}
+
+.ui-leading-sm {
+  line-height: 1.4285714286 !important;
+}
+
+.ui-leading-md {
+  line-height: 1.5 !important;
+}
+
+.ui-leading-lg {
+  line-height: 1.5555555556 !important;
+}
+
+.ui-leading-xl {
+  line-height: 1.4 !important;
+}
+
+.ui-leading-2xl {
+  line-height: 1.3333333333 !important;
+}
+
+.ui-leading-3xl {
+  line-height: 1.2 !important;
+}
+
+.ui-leading-4xl {
+  line-height: 1.1111111111 !important;
+}
+
+.ui-leading-5xl {
+  line-height: 1 !important;
+}
+
+.ui-leading-6xl {
+  line-height: 1 !important;
+}
+
+.ui-leading-7xl {
+  line-height: 1 !important;
+}
+
+.ui-leading-8xl {
+  line-height: 1 !important;
+}
+
+.ui-leading-9xl {
+  line-height: 1 !important;
+}
+
+.ui-leading-none {
+  line-height: 1 !important;
+}
+
+.ui-font-sans {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.ui-font-serif {
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif !important;
+}
+
+.ui-font-mono {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
 @media (min-width: 480px) {
   .mobile-lg:ui-padding-0 {
     padding: 0rem !important;
@@ -42132,5 +42252,281 @@ example:
   }
   .desktop:ui-flex-shrink-0 {
     flex-shrink: 0 !important;
+  }
+}
+@media (min-width: 480px) {
+  .mobile-lg:ui-text-xs {
+    font-size: 0.75rem !important;
+  }
+  .mobile-lg:ui-text-sm {
+    font-size: 0.88rem !important;
+  }
+  .mobile-lg:ui-text-md {
+    font-size: 1rem !important;
+  }
+  .mobile-lg:ui-text-lg {
+    font-size: 1.13rem !important;
+  }
+  .mobile-lg:ui-text-xl {
+    font-size: 1.25rem !important;
+  }
+  .mobile-lg:ui-text-2xl {
+    font-size: 1.5rem !important;
+  }
+  .mobile-lg:ui-text-3xl {
+    font-size: 1.88rem !important;
+  }
+  .mobile-lg:ui-text-4xl {
+    font-size: 2.25rem !important;
+  }
+  .mobile-lg:ui-text-5xl {
+    font-size: 3rem !important;
+  }
+  .mobile-lg:ui-text-6xl {
+    font-size: 4rem !important;
+  }
+  .mobile-lg:ui-text-7xl {
+    font-size: 4.5rem !important;
+  }
+  .mobile-lg:ui-text-8xl {
+    font-size: 6rem !important;
+  }
+  .mobile-lg:ui-text-9xl {
+    font-size: 8rem !important;
+  }
+  .mobile-lg:ui-leading-xs {
+    line-height: 1.3333333333 !important;
+  }
+  .mobile-lg:ui-leading-sm {
+    line-height: 1.4285714286 !important;
+  }
+  .mobile-lg:ui-leading-md {
+    line-height: 1.5 !important;
+  }
+  .mobile-lg:ui-leading-lg {
+    line-height: 1.5555555556 !important;
+  }
+  .mobile-lg:ui-leading-xl {
+    line-height: 1.4 !important;
+  }
+  .mobile-lg:ui-leading-2xl {
+    line-height: 1.3333333333 !important;
+  }
+  .mobile-lg:ui-leading-3xl {
+    line-height: 1.2 !important;
+  }
+  .mobile-lg:ui-leading-4xl {
+    line-height: 1.1111111111 !important;
+  }
+  .mobile-lg:ui-leading-5xl {
+    line-height: 1 !important;
+  }
+  .mobile-lg:ui-leading-6xl {
+    line-height: 1 !important;
+  }
+  .mobile-lg:ui-leading-7xl {
+    line-height: 1 !important;
+  }
+  .mobile-lg:ui-leading-8xl {
+    line-height: 1 !important;
+  }
+  .mobile-lg:ui-leading-9xl {
+    line-height: 1 !important;
+  }
+  .mobile-lg:ui-leading-none {
+    line-height: 1 !important;
+  }
+  .mobile-lg:ui-font-sans {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  }
+  .mobile-lg:ui-font-serif {
+    font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif !important;
+  }
+  .mobile-lg:ui-font-mono {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  }
+}
+@media (min-width: 640px) {
+  .tablet:ui-text-xs {
+    font-size: 0.75rem !important;
+  }
+  .tablet:ui-text-sm {
+    font-size: 0.88rem !important;
+  }
+  .tablet:ui-text-md {
+    font-size: 1rem !important;
+  }
+  .tablet:ui-text-lg {
+    font-size: 1.13rem !important;
+  }
+  .tablet:ui-text-xl {
+    font-size: 1.25rem !important;
+  }
+  .tablet:ui-text-2xl {
+    font-size: 1.5rem !important;
+  }
+  .tablet:ui-text-3xl {
+    font-size: 1.88rem !important;
+  }
+  .tablet:ui-text-4xl {
+    font-size: 2.25rem !important;
+  }
+  .tablet:ui-text-5xl {
+    font-size: 3rem !important;
+  }
+  .tablet:ui-text-6xl {
+    font-size: 4rem !important;
+  }
+  .tablet:ui-text-7xl {
+    font-size: 4.5rem !important;
+  }
+  .tablet:ui-text-8xl {
+    font-size: 6rem !important;
+  }
+  .tablet:ui-text-9xl {
+    font-size: 8rem !important;
+  }
+  .tablet:ui-leading-xs {
+    line-height: 1.3333333333 !important;
+  }
+  .tablet:ui-leading-sm {
+    line-height: 1.4285714286 !important;
+  }
+  .tablet:ui-leading-md {
+    line-height: 1.5 !important;
+  }
+  .tablet:ui-leading-lg {
+    line-height: 1.5555555556 !important;
+  }
+  .tablet:ui-leading-xl {
+    line-height: 1.4 !important;
+  }
+  .tablet:ui-leading-2xl {
+    line-height: 1.3333333333 !important;
+  }
+  .tablet:ui-leading-3xl {
+    line-height: 1.2 !important;
+  }
+  .tablet:ui-leading-4xl {
+    line-height: 1.1111111111 !important;
+  }
+  .tablet:ui-leading-5xl {
+    line-height: 1 !important;
+  }
+  .tablet:ui-leading-6xl {
+    line-height: 1 !important;
+  }
+  .tablet:ui-leading-7xl {
+    line-height: 1 !important;
+  }
+  .tablet:ui-leading-8xl {
+    line-height: 1 !important;
+  }
+  .tablet:ui-leading-9xl {
+    line-height: 1 !important;
+  }
+  .tablet:ui-leading-none {
+    line-height: 1 !important;
+  }
+  .tablet:ui-font-sans {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  }
+  .tablet:ui-font-serif {
+    font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif !important;
+  }
+  .tablet:ui-font-mono {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  }
+}
+@media (min-width: 1024px) {
+  .desktop:ui-text-xs {
+    font-size: 0.75rem !important;
+  }
+  .desktop:ui-text-sm {
+    font-size: 0.88rem !important;
+  }
+  .desktop:ui-text-md {
+    font-size: 1rem !important;
+  }
+  .desktop:ui-text-lg {
+    font-size: 1.13rem !important;
+  }
+  .desktop:ui-text-xl {
+    font-size: 1.25rem !important;
+  }
+  .desktop:ui-text-2xl {
+    font-size: 1.5rem !important;
+  }
+  .desktop:ui-text-3xl {
+    font-size: 1.88rem !important;
+  }
+  .desktop:ui-text-4xl {
+    font-size: 2.25rem !important;
+  }
+  .desktop:ui-text-5xl {
+    font-size: 3rem !important;
+  }
+  .desktop:ui-text-6xl {
+    font-size: 4rem !important;
+  }
+  .desktop:ui-text-7xl {
+    font-size: 4.5rem !important;
+  }
+  .desktop:ui-text-8xl {
+    font-size: 6rem !important;
+  }
+  .desktop:ui-text-9xl {
+    font-size: 8rem !important;
+  }
+  .desktop:ui-leading-xs {
+    line-height: 1.3333333333 !important;
+  }
+  .desktop:ui-leading-sm {
+    line-height: 1.4285714286 !important;
+  }
+  .desktop:ui-leading-md {
+    line-height: 1.5 !important;
+  }
+  .desktop:ui-leading-lg {
+    line-height: 1.5555555556 !important;
+  }
+  .desktop:ui-leading-xl {
+    line-height: 1.4 !important;
+  }
+  .desktop:ui-leading-2xl {
+    line-height: 1.3333333333 !important;
+  }
+  .desktop:ui-leading-3xl {
+    line-height: 1.2 !important;
+  }
+  .desktop:ui-leading-4xl {
+    line-height: 1.1111111111 !important;
+  }
+  .desktop:ui-leading-5xl {
+    line-height: 1 !important;
+  }
+  .desktop:ui-leading-6xl {
+    line-height: 1 !important;
+  }
+  .desktop:ui-leading-7xl {
+    line-height: 1 !important;
+  }
+  .desktop:ui-leading-8xl {
+    line-height: 1 !important;
+  }
+  .desktop:ui-leading-9xl {
+    line-height: 1 !important;
+  }
+  .desktop:ui-leading-none {
+    line-height: 1 !important;
+  }
+  .desktop:ui-font-sans {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  }
+  .desktop:ui-font-serif {
+    font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif !important;
+  }
+  .desktop:ui-font-mono {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
   }
 }
