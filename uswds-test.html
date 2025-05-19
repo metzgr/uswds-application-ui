@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USWDS Component Test</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    <header class="usa-header usa-header--basic">
+        <div class="usa-nav-container">
+            <div class="usa-navbar">
+                <div class="usa-logo" id="basic-logo">
+                    <em class="usa-logo__text"><a href="/" title="Home" aria-label="Home">Project Name</a></em>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="usa-section padding-y-5">
+        <div class="grid-container">
+            <h1 class="font-heading-2xl margin-bottom-4">USWDS Component Test Page</h1>
+
+            <!-- Accordion -->
+            <section class="margin-bottom-4">
+                <h2 class="font-heading-xl">Accordion</h2>
+                <div class="usa-accordion">
+                    <h3 class="usa-accordion__heading">
+                        <button class="usa-accordion__button" aria-expanded="false" aria-controls="accordion-1">
+                            First Amendment
+                        </button>
+                    </h3>
+                    <div id="accordion-1" class="usa-accordion__content usa-prose">
+                        <p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
+                    </div>
+
+                    <h3 class="usa-accordion__heading">
+                        <button class="usa-accordion__button" aria-expanded="false" aria-controls="accordion-2">
+                            Second Amendment
+                        </button>
+                    </h3>
+                    <div id="accordion-2" class="usa-accordion__content usa-prose">
+                        <p>A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alert -->
+            <section class="margin-bottom-4">
+                <h2 class="font-heading-xl">Alert</h2>
+                <div class="usa-alert usa-alert--info">
+                    <div class="usa-alert__body">
+                        <h3 class="usa-alert__heading">Informative alert</h3>
+                        <p class="usa-alert__text">This is an example of an info alert.</p>
+                    </div>
+                </div>
+                <div class="usa-alert usa-alert--success margin-top-2">
+                    <div class="usa-alert__body">
+                        <h3 class="usa-alert__heading">Success alert</h3>
+                        <p class="usa-alert__text">Your action was successful.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Button -->
+            <section class="margin-bottom-4">
+                <h2 class="font-heading-xl">Buttons</h2>
+                <button class="usa-button" type="button">Default</button>
+                <button class="usa-button usa-button--secondary" type="button">Secondary</button>
+                <button class="usa-button usa-button--accent-cool" type="button">Accent Cool</button>
+                <button class="usa-button usa-button--outline" type="button">Outline</button>
+                <button class="usa-button usa-button--disabled" type="button" disabled>Disabled</button>
+            </section>
+
+            <!-- Card -->
+            <section class="margin-bottom-4">
+                <h2 class="font-heading-xl">Card</h2>
+                <div class="usa-card__container">
+                    <div class="usa-card__header">
+                        <h3 class="usa-card__heading">Standard card</h3>
+                    </div>
+                    <div class="usa-card__body">
+                        <p>This is the body of a standard USWDS card. It can contain text, links, and other elements.</p>
+                    </div>
+                    <div class="usa-card__footer">
+                        <button class="usa-button" type="button">Card action</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Checkbox -->
+            <section class="margin-bottom-4">
+                <h2 class="font-heading-xl">Checkbox</h2>
+                <div class="usa-checkbox">
+                    <input class="usa-checkbox__input" id="historical-truth" type="checkbox" name="historical-figures" value="truth" checked>
+                    <label class="usa-checkbox__label" for="historical-truth">Sojourner Truth</label>
+                  </div>
+                  <div class="usa-checkbox">
+                    <input class="usa-checkbox__input" id="historical-douglass" type="checkbox" name="historical-figures" value="douglass">
+                    <label class="usa-checkbox__label" for="historical-douglass">Frederick Douglass</label>
+                  </div>
+            </section>
+            
+            <!-- Custom Utility Test -->
+            <section class="margin-y-4 padding-y-4 border-top-1px border-base-lighter">
+                <h2 class="font-heading-xl">Custom Utility Test Area</h2>
+                <p>Use this space to test your custom utilities. For example:</p>
+                <div class="bg-base-lightest padding-2 margin-bottom-2">
+                    <p>This box has <code>padding-2</code> and <code>margin-bottom-2</code>.</p>
+                </div>
+                <div class="bg-primary-lighter padding-1px margin-y-4">
+                    <p>This box uses <code>padding-1px</code> and <code>margin-y-4</code> (based on your <code>$theme-spacing-scale</code>).</p>
+                </div>
+                <div class="bg-secondary-lighter padding-05 margin-left-neg-1">
+                     <p>This box uses <code>padding-05</code> and <code>margin-left-neg-1</code> (if your custom utilities are working).</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="usa-footer usa-footer--slim">
+        <div class="grid-container usa-footer__return-to-top">
+            <a href="#">Return to top</a>
+        </div>
+        <div class="usa-footer__primary-section">
+            <div class="usa-footer__primary-container grid-container">
+                 <p class="usa-footer__note">Test Footer</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/@uswds/uswds/dist/js/uswds.min.js"></script>
+</body>
+</html>
