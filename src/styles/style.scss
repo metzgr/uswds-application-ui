@@ -6,6 +6,7 @@
 // This makes your variables and configurations (from src/styles/uswds-application-ui/_settings.scss)
 // available to USWDS and other modules used later in this file.
 @forward "./uswds-application-ui/settings";
+@use "./uswds-application-ui/ui-spacing";
 
 // 2. Initialize USWDS.
 // USWDS (from node_modules) will pick up settings from the "./uswds-application-ui/_settings.scss"

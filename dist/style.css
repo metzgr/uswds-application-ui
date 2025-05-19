@@ -1,4 +1,1953 @@
 @charset "UTF-8";
+.ui-padding-0 {
+  padding: 0rem !important;
+}
+
+.ui-padding-1px {
+  padding: 0.0625rem !important;
+}
+
+.ui-padding-05 {
+  padding: 0.125rem !important;
+}
+
+.ui-padding-1 {
+  padding: 0.25rem !important;
+}
+
+.ui-padding-5px {
+  padding: 0.3125rem !important;
+}
+
+.ui-padding-105 {
+  padding: 0.375rem !important;
+}
+
+.ui-padding-2 {
+  padding: 0.5rem !important;
+}
+
+.ui-padding-205 {
+  padding: 0.625rem !important;
+}
+
+.ui-padding-3 {
+  padding: 0.75rem !important;
+}
+
+.ui-padding-4 {
+  padding: 1rem !important;
+}
+
+.ui-padding-5 {
+  padding: 1.25rem !important;
+}
+
+.ui-padding-6 {
+  padding: 1.5rem !important;
+}
+
+.ui-padding-7 {
+  padding: 1.75rem !important;
+}
+
+.ui-padding-8 {
+  padding: 2rem !important;
+}
+
+.ui-padding-9 {
+  padding: 2.25rem !important;
+}
+
+.ui-padding-10 {
+  padding: 2.5rem !important;
+}
+
+.ui-padding-11 {
+  padding: 2.75rem !important;
+}
+
+.ui-padding-12 {
+  padding: 3rem !important;
+}
+
+.ui-padding-14 {
+  padding: 3.5rem !important;
+}
+
+.ui-padding-16 {
+  padding: 4rem !important;
+}
+
+.ui-padding-20 {
+  padding: 5rem !important;
+}
+
+.ui-padding-24 {
+  padding: 6rem !important;
+}
+
+.ui-padding-28 {
+  padding: 7rem !important;
+}
+
+.ui-padding-32 {
+  padding: 8rem !important;
+}
+
+.ui-padding-36 {
+  padding: 9rem !important;
+}
+
+.ui-padding-40 {
+  padding: 10rem !important;
+}
+
+.ui-padding-48 {
+  padding: 12rem !important;
+}
+
+.ui-padding-top-0 {
+  padding-top: 0rem !important;
+}
+
+.ui-padding-top-1px {
+  padding-top: 0.0625rem !important;
+}
+
+.ui-padding-top-05 {
+  padding-top: 0.125rem !important;
+}
+
+.ui-padding-top-1 {
+  padding-top: 0.25rem !important;
+}
+
+.ui-padding-top-5px {
+  padding-top: 0.3125rem !important;
+}
+
+.ui-padding-top-105 {
+  padding-top: 0.375rem !important;
+}
+
+.ui-padding-top-2 {
+  padding-top: 0.5rem !important;
+}
+
+.ui-padding-top-205 {
+  padding-top: 0.625rem !important;
+}
+
+.ui-padding-top-3 {
+  padding-top: 0.75rem !important;
+}
+
+.ui-padding-top-4 {
+  padding-top: 1rem !important;
+}
+
+.ui-padding-top-5 {
+  padding-top: 1.25rem !important;
+}
+
+.ui-padding-top-6 {
+  padding-top: 1.5rem !important;
+}
+
+.ui-padding-top-7 {
+  padding-top: 1.75rem !important;
+}
+
+.ui-padding-top-8 {
+  padding-top: 2rem !important;
+}
+
+.ui-padding-top-9 {
+  padding-top: 2.25rem !important;
+}
+
+.ui-padding-top-10 {
+  padding-top: 2.5rem !important;
+}
+
+.ui-padding-top-11 {
+  padding-top: 2.75rem !important;
+}
+
+.ui-padding-top-12 {
+  padding-top: 3rem !important;
+}
+
+.ui-padding-top-14 {
+  padding-top: 3.5rem !important;
+}
+
+.ui-padding-top-16 {
+  padding-top: 4rem !important;
+}
+
+.ui-padding-top-20 {
+  padding-top: 5rem !important;
+}
+
+.ui-padding-top-24 {
+  padding-top: 6rem !important;
+}
+
+.ui-padding-top-28 {
+  padding-top: 7rem !important;
+}
+
+.ui-padding-top-32 {
+  padding-top: 8rem !important;
+}
+
+.ui-padding-top-36 {
+  padding-top: 9rem !important;
+}
+
+.ui-padding-top-40 {
+  padding-top: 10rem !important;
+}
+
+.ui-padding-top-48 {
+  padding-top: 12rem !important;
+}
+
+.ui-padding-right-0 {
+  padding-right: 0rem !important;
+}
+
+.ui-padding-right-1px {
+  padding-right: 0.0625rem !important;
+}
+
+.ui-padding-right-05 {
+  padding-right: 0.125rem !important;
+}
+
+.ui-padding-right-1 {
+  padding-right: 0.25rem !important;
+}
+
+.ui-padding-right-5px {
+  padding-right: 0.3125rem !important;
+}
+
+.ui-padding-right-105 {
+  padding-right: 0.375rem !important;
+}
+
+.ui-padding-right-2 {
+  padding-right: 0.5rem !important;
+}
+
+.ui-padding-right-205 {
+  padding-right: 0.625rem !important;
+}
+
+.ui-padding-right-3 {
+  padding-right: 0.75rem !important;
+}
+
+.ui-padding-right-4 {
+  padding-right: 1rem !important;
+}
+
+.ui-padding-right-5 {
+  padding-right: 1.25rem !important;
+}
+
+.ui-padding-right-6 {
+  padding-right: 1.5rem !important;
+}
+
+.ui-padding-right-7 {
+  padding-right: 1.75rem !important;
+}
+
+.ui-padding-right-8 {
+  padding-right: 2rem !important;
+}
+
+.ui-padding-right-9 {
+  padding-right: 2.25rem !important;
+}
+
+.ui-padding-right-10 {
+  padding-right: 2.5rem !important;
+}
+
+.ui-padding-right-11 {
+  padding-right: 2.75rem !important;
+}
+
+.ui-padding-right-12 {
+  padding-right: 3rem !important;
+}
+
+.ui-padding-right-14 {
+  padding-right: 3.5rem !important;
+}
+
+.ui-padding-right-16 {
+  padding-right: 4rem !important;
+}
+
+.ui-padding-right-20 {
+  padding-right: 5rem !important;
+}
+
+.ui-padding-right-24 {
+  padding-right: 6rem !important;
+}
+
+.ui-padding-right-28 {
+  padding-right: 7rem !important;
+}
+
+.ui-padding-right-32 {
+  padding-right: 8rem !important;
+}
+
+.ui-padding-right-36 {
+  padding-right: 9rem !important;
+}
+
+.ui-padding-right-40 {
+  padding-right: 10rem !important;
+}
+
+.ui-padding-right-48 {
+  padding-right: 12rem !important;
+}
+
+.ui-padding-bottom-0 {
+  padding-bottom: 0rem !important;
+}
+
+.ui-padding-bottom-1px {
+  padding-bottom: 0.0625rem !important;
+}
+
+.ui-padding-bottom-05 {
+  padding-bottom: 0.125rem !important;
+}
+
+.ui-padding-bottom-1 {
+  padding-bottom: 0.25rem !important;
+}
+
+.ui-padding-bottom-5px {
+  padding-bottom: 0.3125rem !important;
+}
+
+.ui-padding-bottom-105 {
+  padding-bottom: 0.375rem !important;
+}
+
+.ui-padding-bottom-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+.ui-padding-bottom-205 {
+  padding-bottom: 0.625rem !important;
+}
+
+.ui-padding-bottom-3 {
+  padding-bottom: 0.75rem !important;
+}
+
+.ui-padding-bottom-4 {
+  padding-bottom: 1rem !important;
+}
+
+.ui-padding-bottom-5 {
+  padding-bottom: 1.25rem !important;
+}
+
+.ui-padding-bottom-6 {
+  padding-bottom: 1.5rem !important;
+}
+
+.ui-padding-bottom-7 {
+  padding-bottom: 1.75rem !important;
+}
+
+.ui-padding-bottom-8 {
+  padding-bottom: 2rem !important;
+}
+
+.ui-padding-bottom-9 {
+  padding-bottom: 2.25rem !important;
+}
+
+.ui-padding-bottom-10 {
+  padding-bottom: 2.5rem !important;
+}
+
+.ui-padding-bottom-11 {
+  padding-bottom: 2.75rem !important;
+}
+
+.ui-padding-bottom-12 {
+  padding-bottom: 3rem !important;
+}
+
+.ui-padding-bottom-14 {
+  padding-bottom: 3.5rem !important;
+}
+
+.ui-padding-bottom-16 {
+  padding-bottom: 4rem !important;
+}
+
+.ui-padding-bottom-20 {
+  padding-bottom: 5rem !important;
+}
+
+.ui-padding-bottom-24 {
+  padding-bottom: 6rem !important;
+}
+
+.ui-padding-bottom-28 {
+  padding-bottom: 7rem !important;
+}
+
+.ui-padding-bottom-32 {
+  padding-bottom: 8rem !important;
+}
+
+.ui-padding-bottom-36 {
+  padding-bottom: 9rem !important;
+}
+
+.ui-padding-bottom-40 {
+  padding-bottom: 10rem !important;
+}
+
+.ui-padding-bottom-48 {
+  padding-bottom: 12rem !important;
+}
+
+.ui-padding-left-0 {
+  padding-left: 0rem !important;
+}
+
+.ui-padding-left-1px {
+  padding-left: 0.0625rem !important;
+}
+
+.ui-padding-left-05 {
+  padding-left: 0.125rem !important;
+}
+
+.ui-padding-left-1 {
+  padding-left: 0.25rem !important;
+}
+
+.ui-padding-left-5px {
+  padding-left: 0.3125rem !important;
+}
+
+.ui-padding-left-105 {
+  padding-left: 0.375rem !important;
+}
+
+.ui-padding-left-2 {
+  padding-left: 0.5rem !important;
+}
+
+.ui-padding-left-205 {
+  padding-left: 0.625rem !important;
+}
+
+.ui-padding-left-3 {
+  padding-left: 0.75rem !important;
+}
+
+.ui-padding-left-4 {
+  padding-left: 1rem !important;
+}
+
+.ui-padding-left-5 {
+  padding-left: 1.25rem !important;
+}
+
+.ui-padding-left-6 {
+  padding-left: 1.5rem !important;
+}
+
+.ui-padding-left-7 {
+  padding-left: 1.75rem !important;
+}
+
+.ui-padding-left-8 {
+  padding-left: 2rem !important;
+}
+
+.ui-padding-left-9 {
+  padding-left: 2.25rem !important;
+}
+
+.ui-padding-left-10 {
+  padding-left: 2.5rem !important;
+}
+
+.ui-padding-left-11 {
+  padding-left: 2.75rem !important;
+}
+
+.ui-padding-left-12 {
+  padding-left: 3rem !important;
+}
+
+.ui-padding-left-14 {
+  padding-left: 3.5rem !important;
+}
+
+.ui-padding-left-16 {
+  padding-left: 4rem !important;
+}
+
+.ui-padding-left-20 {
+  padding-left: 5rem !important;
+}
+
+.ui-padding-left-24 {
+  padding-left: 6rem !important;
+}
+
+.ui-padding-left-28 {
+  padding-left: 7rem !important;
+}
+
+.ui-padding-left-32 {
+  padding-left: 8rem !important;
+}
+
+.ui-padding-left-36 {
+  padding-left: 9rem !important;
+}
+
+.ui-padding-left-40 {
+  padding-left: 10rem !important;
+}
+
+.ui-padding-left-48 {
+  padding-left: 12rem !important;
+}
+
+.ui-padding-x-0 {
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
+
+.ui-padding-x-1px {
+  padding-left: 0.0625rem !important;
+  padding-right: 0.0625rem !important;
+}
+
+.ui-padding-x-05 {
+  padding-left: 0.125rem !important;
+  padding-right: 0.125rem !important;
+}
+
+.ui-padding-x-1 {
+  padding-left: 0.25rem !important;
+  padding-right: 0.25rem !important;
+}
+
+.ui-padding-x-5px {
+  padding-left: 0.3125rem !important;
+  padding-right: 0.3125rem !important;
+}
+
+.ui-padding-x-105 {
+  padding-left: 0.375rem !important;
+  padding-right: 0.375rem !important;
+}
+
+.ui-padding-x-2 {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+.ui-padding-x-205 {
+  padding-left: 0.625rem !important;
+  padding-right: 0.625rem !important;
+}
+
+.ui-padding-x-3 {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+.ui-padding-x-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.ui-padding-x-5 {
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+.ui-padding-x-6 {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.ui-padding-x-7 {
+  padding-left: 1.75rem !important;
+  padding-right: 1.75rem !important;
+}
+
+.ui-padding-x-8 {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+.ui-padding-x-9 {
+  padding-left: 2.25rem !important;
+  padding-right: 2.25rem !important;
+}
+
+.ui-padding-x-10 {
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+}
+
+.ui-padding-x-11 {
+  padding-left: 2.75rem !important;
+  padding-right: 2.75rem !important;
+}
+
+.ui-padding-x-12 {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+.ui-padding-x-14 {
+  padding-left: 3.5rem !important;
+  padding-right: 3.5rem !important;
+}
+
+.ui-padding-x-16 {
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+}
+
+.ui-padding-x-20 {
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+.ui-padding-x-24 {
+  padding-left: 6rem !important;
+  padding-right: 6rem !important;
+}
+
+.ui-padding-x-28 {
+  padding-left: 7rem !important;
+  padding-right: 7rem !important;
+}
+
+.ui-padding-x-32 {
+  padding-left: 8rem !important;
+  padding-right: 8rem !important;
+}
+
+.ui-padding-x-36 {
+  padding-left: 9rem !important;
+  padding-right: 9rem !important;
+}
+
+.ui-padding-x-40 {
+  padding-left: 10rem !important;
+  padding-right: 10rem !important;
+}
+
+.ui-padding-x-48 {
+  padding-left: 12rem !important;
+  padding-right: 12rem !important;
+}
+
+.ui-padding-y-0 {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.ui-padding-y-1px {
+  padding-top: 0.0625rem !important;
+  padding-bottom: 0.0625rem !important;
+}
+
+.ui-padding-y-05 {
+  padding-top: 0.125rem !important;
+  padding-bottom: 0.125rem !important;
+}
+
+.ui-padding-y-1 {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.ui-padding-y-5px {
+  padding-top: 0.3125rem !important;
+  padding-bottom: 0.3125rem !important;
+}
+
+.ui-padding-y-105 {
+  padding-top: 0.375rem !important;
+  padding-bottom: 0.375rem !important;
+}
+
+.ui-padding-y-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.ui-padding-y-205 {
+  padding-top: 0.625rem !important;
+  padding-bottom: 0.625rem !important;
+}
+
+.ui-padding-y-3 {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+.ui-padding-y-4 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.ui-padding-y-5 {
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+}
+
+.ui-padding-y-6 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.ui-padding-y-7 {
+  padding-top: 1.75rem !important;
+  padding-bottom: 1.75rem !important;
+}
+
+.ui-padding-y-8 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+.ui-padding-y-9 {
+  padding-top: 2.25rem !important;
+  padding-bottom: 2.25rem !important;
+}
+
+.ui-padding-y-10 {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+.ui-padding-y-11 {
+  padding-top: 2.75rem !important;
+  padding-bottom: 2.75rem !important;
+}
+
+.ui-padding-y-12 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.ui-padding-y-14 {
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
+.ui-padding-y-16 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.ui-padding-y-20 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.ui-padding-y-24 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+.ui-padding-y-28 {
+  padding-top: 7rem !important;
+  padding-bottom: 7rem !important;
+}
+
+.ui-padding-y-32 {
+  padding-top: 8rem !important;
+  padding-bottom: 8rem !important;
+}
+
+.ui-padding-y-36 {
+  padding-top: 9rem !important;
+  padding-bottom: 9rem !important;
+}
+
+.ui-padding-y-40 {
+  padding-top: 10rem !important;
+  padding-bottom: 10rem !important;
+}
+
+.ui-padding-y-48 {
+  padding-top: 12rem !important;
+  padding-bottom: 12rem !important;
+}
+
+.ui-margin-0 {
+  margin: 0rem !important;
+}
+
+.ui-margin-1px {
+  margin: 0.0625rem !important;
+}
+
+.ui-margin-05 {
+  margin: 0.125rem !important;
+}
+
+.ui-margin-1 {
+  margin: 0.25rem !important;
+}
+
+.ui-margin-5px {
+  margin: 0.3125rem !important;
+}
+
+.ui-margin-105 {
+  margin: 0.375rem !important;
+}
+
+.ui-margin-2 {
+  margin: 0.5rem !important;
+}
+
+.ui-margin-205 {
+  margin: 0.625rem !important;
+}
+
+.ui-margin-3 {
+  margin: 0.75rem !important;
+}
+
+.ui-margin-4 {
+  margin: 1rem !important;
+}
+
+.ui-margin-5 {
+  margin: 1.25rem !important;
+}
+
+.ui-margin-6 {
+  margin: 1.5rem !important;
+}
+
+.ui-margin-7 {
+  margin: 1.75rem !important;
+}
+
+.ui-margin-8 {
+  margin: 2rem !important;
+}
+
+.ui-margin-9 {
+  margin: 2.25rem !important;
+}
+
+.ui-margin-10 {
+  margin: 2.5rem !important;
+}
+
+.ui-margin-11 {
+  margin: 2.75rem !important;
+}
+
+.ui-margin-12 {
+  margin: 3rem !important;
+}
+
+.ui-margin-14 {
+  margin: 3.5rem !important;
+}
+
+.ui-margin-16 {
+  margin: 4rem !important;
+}
+
+.ui-margin-20 {
+  margin: 5rem !important;
+}
+
+.ui-margin-24 {
+  margin: 6rem !important;
+}
+
+.ui-margin-28 {
+  margin: 7rem !important;
+}
+
+.ui-margin-32 {
+  margin: 8rem !important;
+}
+
+.ui-margin-36 {
+  margin: 9rem !important;
+}
+
+.ui-margin-40 {
+  margin: 10rem !important;
+}
+
+.ui-margin-48 {
+  margin: 12rem !important;
+}
+
+.ui-margin-top-0 {
+  margin-top: 0rem !important;
+}
+
+.ui-margin-top-1px {
+  margin-top: 0.0625rem !important;
+}
+
+.ui-margin-top-05 {
+  margin-top: 0.125rem !important;
+}
+
+.ui-margin-top-1 {
+  margin-top: 0.25rem !important;
+}
+
+.ui-margin-top-5px {
+  margin-top: 0.3125rem !important;
+}
+
+.ui-margin-top-105 {
+  margin-top: 0.375rem !important;
+}
+
+.ui-margin-top-2 {
+  margin-top: 0.5rem !important;
+}
+
+.ui-margin-top-205 {
+  margin-top: 0.625rem !important;
+}
+
+.ui-margin-top-3 {
+  margin-top: 0.75rem !important;
+}
+
+.ui-margin-top-4 {
+  margin-top: 1rem !important;
+}
+
+.ui-margin-top-5 {
+  margin-top: 1.25rem !important;
+}
+
+.ui-margin-top-6 {
+  margin-top: 1.5rem !important;
+}
+
+.ui-margin-top-7 {
+  margin-top: 1.75rem !important;
+}
+
+.ui-margin-top-8 {
+  margin-top: 2rem !important;
+}
+
+.ui-margin-top-9 {
+  margin-top: 2.25rem !important;
+}
+
+.ui-margin-top-10 {
+  margin-top: 2.5rem !important;
+}
+
+.ui-margin-top-11 {
+  margin-top: 2.75rem !important;
+}
+
+.ui-margin-top-12 {
+  margin-top: 3rem !important;
+}
+
+.ui-margin-top-14 {
+  margin-top: 3.5rem !important;
+}
+
+.ui-margin-top-16 {
+  margin-top: 4rem !important;
+}
+
+.ui-margin-top-20 {
+  margin-top: 5rem !important;
+}
+
+.ui-margin-top-24 {
+  margin-top: 6rem !important;
+}
+
+.ui-margin-top-28 {
+  margin-top: 7rem !important;
+}
+
+.ui-margin-top-32 {
+  margin-top: 8rem !important;
+}
+
+.ui-margin-top-36 {
+  margin-top: 9rem !important;
+}
+
+.ui-margin-top-40 {
+  margin-top: 10rem !important;
+}
+
+.ui-margin-top-48 {
+  margin-top: 12rem !important;
+}
+
+.ui-margin-right-0 {
+  margin-right: 0rem !important;
+}
+
+.ui-margin-right-1px {
+  margin-right: 0.0625rem !important;
+}
+
+.ui-margin-right-05 {
+  margin-right: 0.125rem !important;
+}
+
+.ui-margin-right-1 {
+  margin-right: 0.25rem !important;
+}
+
+.ui-margin-right-5px {
+  margin-right: 0.3125rem !important;
+}
+
+.ui-margin-right-105 {
+  margin-right: 0.375rem !important;
+}
+
+.ui-margin-right-2 {
+  margin-right: 0.5rem !important;
+}
+
+.ui-margin-right-205 {
+  margin-right: 0.625rem !important;
+}
+
+.ui-margin-right-3 {
+  margin-right: 0.75rem !important;
+}
+
+.ui-margin-right-4 {
+  margin-right: 1rem !important;
+}
+
+.ui-margin-right-5 {
+  margin-right: 1.25rem !important;
+}
+
+.ui-margin-right-6 {
+  margin-right: 1.5rem !important;
+}
+
+.ui-margin-right-7 {
+  margin-right: 1.75rem !important;
+}
+
+.ui-margin-right-8 {
+  margin-right: 2rem !important;
+}
+
+.ui-margin-right-9 {
+  margin-right: 2.25rem !important;
+}
+
+.ui-margin-right-10 {
+  margin-right: 2.5rem !important;
+}
+
+.ui-margin-right-11 {
+  margin-right: 2.75rem !important;
+}
+
+.ui-margin-right-12 {
+  margin-right: 3rem !important;
+}
+
+.ui-margin-right-14 {
+  margin-right: 3.5rem !important;
+}
+
+.ui-margin-right-16 {
+  margin-right: 4rem !important;
+}
+
+.ui-margin-right-20 {
+  margin-right: 5rem !important;
+}
+
+.ui-margin-right-24 {
+  margin-right: 6rem !important;
+}
+
+.ui-margin-right-28 {
+  margin-right: 7rem !important;
+}
+
+.ui-margin-right-32 {
+  margin-right: 8rem !important;
+}
+
+.ui-margin-right-36 {
+  margin-right: 9rem !important;
+}
+
+.ui-margin-right-40 {
+  margin-right: 10rem !important;
+}
+
+.ui-margin-right-48 {
+  margin-right: 12rem !important;
+}
+
+.ui-margin-bottom-0 {
+  margin-bottom: 0rem !important;
+}
+
+.ui-margin-bottom-1px {
+  margin-bottom: 0.0625rem !important;
+}
+
+.ui-margin-bottom-05 {
+  margin-bottom: 0.125rem !important;
+}
+
+.ui-margin-bottom-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.ui-margin-bottom-5px {
+  margin-bottom: 0.3125rem !important;
+}
+
+.ui-margin-bottom-105 {
+  margin-bottom: 0.375rem !important;
+}
+
+.ui-margin-bottom-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.ui-margin-bottom-205 {
+  margin-bottom: 0.625rem !important;
+}
+
+.ui-margin-bottom-3 {
+  margin-bottom: 0.75rem !important;
+}
+
+.ui-margin-bottom-4 {
+  margin-bottom: 1rem !important;
+}
+
+.ui-margin-bottom-5 {
+  margin-bottom: 1.25rem !important;
+}
+
+.ui-margin-bottom-6 {
+  margin-bottom: 1.5rem !important;
+}
+
+.ui-margin-bottom-7 {
+  margin-bottom: 1.75rem !important;
+}
+
+.ui-margin-bottom-8 {
+  margin-bottom: 2rem !important;
+}
+
+.ui-margin-bottom-9 {
+  margin-bottom: 2.25rem !important;
+}
+
+.ui-margin-bottom-10 {
+  margin-bottom: 2.5rem !important;
+}
+
+.ui-margin-bottom-11 {
+  margin-bottom: 2.75rem !important;
+}
+
+.ui-margin-bottom-12 {
+  margin-bottom: 3rem !important;
+}
+
+.ui-margin-bottom-14 {
+  margin-bottom: 3.5rem !important;
+}
+
+.ui-margin-bottom-16 {
+  margin-bottom: 4rem !important;
+}
+
+.ui-margin-bottom-20 {
+  margin-bottom: 5rem !important;
+}
+
+.ui-margin-bottom-24 {
+  margin-bottom: 6rem !important;
+}
+
+.ui-margin-bottom-28 {
+  margin-bottom: 7rem !important;
+}
+
+.ui-margin-bottom-32 {
+  margin-bottom: 8rem !important;
+}
+
+.ui-margin-bottom-36 {
+  margin-bottom: 9rem !important;
+}
+
+.ui-margin-bottom-40 {
+  margin-bottom: 10rem !important;
+}
+
+.ui-margin-bottom-48 {
+  margin-bottom: 12rem !important;
+}
+
+.ui-margin-left-0 {
+  margin-left: 0rem !important;
+}
+
+.ui-margin-left-1px {
+  margin-left: 0.0625rem !important;
+}
+
+.ui-margin-left-05 {
+  margin-left: 0.125rem !important;
+}
+
+.ui-margin-left-1 {
+  margin-left: 0.25rem !important;
+}
+
+.ui-margin-left-5px {
+  margin-left: 0.3125rem !important;
+}
+
+.ui-margin-left-105 {
+  margin-left: 0.375rem !important;
+}
+
+.ui-margin-left-2 {
+  margin-left: 0.5rem !important;
+}
+
+.ui-margin-left-205 {
+  margin-left: 0.625rem !important;
+}
+
+.ui-margin-left-3 {
+  margin-left: 0.75rem !important;
+}
+
+.ui-margin-left-4 {
+  margin-left: 1rem !important;
+}
+
+.ui-margin-left-5 {
+  margin-left: 1.25rem !important;
+}
+
+.ui-margin-left-6 {
+  margin-left: 1.5rem !important;
+}
+
+.ui-margin-left-7 {
+  margin-left: 1.75rem !important;
+}
+
+.ui-margin-left-8 {
+  margin-left: 2rem !important;
+}
+
+.ui-margin-left-9 {
+  margin-left: 2.25rem !important;
+}
+
+.ui-margin-left-10 {
+  margin-left: 2.5rem !important;
+}
+
+.ui-margin-left-11 {
+  margin-left: 2.75rem !important;
+}
+
+.ui-margin-left-12 {
+  margin-left: 3rem !important;
+}
+
+.ui-margin-left-14 {
+  margin-left: 3.5rem !important;
+}
+
+.ui-margin-left-16 {
+  margin-left: 4rem !important;
+}
+
+.ui-margin-left-20 {
+  margin-left: 5rem !important;
+}
+
+.ui-margin-left-24 {
+  margin-left: 6rem !important;
+}
+
+.ui-margin-left-28 {
+  margin-left: 7rem !important;
+}
+
+.ui-margin-left-32 {
+  margin-left: 8rem !important;
+}
+
+.ui-margin-left-36 {
+  margin-left: 9rem !important;
+}
+
+.ui-margin-left-40 {
+  margin-left: 10rem !important;
+}
+
+.ui-margin-left-48 {
+  margin-left: 12rem !important;
+}
+
+.ui-margin-x-0 {
+  margin-left: 0rem !important;
+  margin-right: 0rem !important;
+}
+
+.ui-margin-x-1px {
+  margin-left: 0.0625rem !important;
+  margin-right: 0.0625rem !important;
+}
+
+.ui-margin-x-05 {
+  margin-left: 0.125rem !important;
+  margin-right: 0.125rem !important;
+}
+
+.ui-margin-x-1 {
+  margin-left: 0.25rem !important;
+  margin-right: 0.25rem !important;
+}
+
+.ui-margin-x-5px {
+  margin-left: 0.3125rem !important;
+  margin-right: 0.3125rem !important;
+}
+
+.ui-margin-x-105 {
+  margin-left: 0.375rem !important;
+  margin-right: 0.375rem !important;
+}
+
+.ui-margin-x-2 {
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
+}
+
+.ui-margin-x-205 {
+  margin-left: 0.625rem !important;
+  margin-right: 0.625rem !important;
+}
+
+.ui-margin-x-3 {
+  margin-left: 0.75rem !important;
+  margin-right: 0.75rem !important;
+}
+
+.ui-margin-x-4 {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+
+.ui-margin-x-5 {
+  margin-left: 1.25rem !important;
+  margin-right: 1.25rem !important;
+}
+
+.ui-margin-x-6 {
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important;
+}
+
+.ui-margin-x-7 {
+  margin-left: 1.75rem !important;
+  margin-right: 1.75rem !important;
+}
+
+.ui-margin-x-8 {
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
+}
+
+.ui-margin-x-9 {
+  margin-left: 2.25rem !important;
+  margin-right: 2.25rem !important;
+}
+
+.ui-margin-x-10 {
+  margin-left: 2.5rem !important;
+  margin-right: 2.5rem !important;
+}
+
+.ui-margin-x-11 {
+  margin-left: 2.75rem !important;
+  margin-right: 2.75rem !important;
+}
+
+.ui-margin-x-12 {
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+
+.ui-margin-x-14 {
+  margin-left: 3.5rem !important;
+  margin-right: 3.5rem !important;
+}
+
+.ui-margin-x-16 {
+  margin-left: 4rem !important;
+  margin-right: 4rem !important;
+}
+
+.ui-margin-x-20 {
+  margin-left: 5rem !important;
+  margin-right: 5rem !important;
+}
+
+.ui-margin-x-24 {
+  margin-left: 6rem !important;
+  margin-right: 6rem !important;
+}
+
+.ui-margin-x-28 {
+  margin-left: 7rem !important;
+  margin-right: 7rem !important;
+}
+
+.ui-margin-x-32 {
+  margin-left: 8rem !important;
+  margin-right: 8rem !important;
+}
+
+.ui-margin-x-36 {
+  margin-left: 9rem !important;
+  margin-right: 9rem !important;
+}
+
+.ui-margin-x-40 {
+  margin-left: 10rem !important;
+  margin-right: 10rem !important;
+}
+
+.ui-margin-x-48 {
+  margin-left: 12rem !important;
+  margin-right: 12rem !important;
+}
+
+.ui-margin-y-0 {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.ui-margin-y-1px {
+  margin-top: 0.0625rem !important;
+  margin-bottom: 0.0625rem !important;
+}
+
+.ui-margin-y-05 {
+  margin-top: 0.125rem !important;
+  margin-bottom: 0.125rem !important;
+}
+
+.ui-margin-y-1 {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.ui-margin-y-5px {
+  margin-top: 0.3125rem !important;
+  margin-bottom: 0.3125rem !important;
+}
+
+.ui-margin-y-105 {
+  margin-top: 0.375rem !important;
+  margin-bottom: 0.375rem !important;
+}
+
+.ui-margin-y-2 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.ui-margin-y-205 {
+  margin-top: 0.625rem !important;
+  margin-bottom: 0.625rem !important;
+}
+
+.ui-margin-y-3 {
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.ui-margin-y-4 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.ui-margin-y-5 {
+  margin-top: 1.25rem !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.ui-margin-y-6 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.ui-margin-y-7 {
+  margin-top: 1.75rem !important;
+  margin-bottom: 1.75rem !important;
+}
+
+.ui-margin-y-8 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.ui-margin-y-9 {
+  margin-top: 2.25rem !important;
+  margin-bottom: 2.25rem !important;
+}
+
+.ui-margin-y-10 {
+  margin-top: 2.5rem !important;
+  margin-bottom: 2.5rem !important;
+}
+
+.ui-margin-y-11 {
+  margin-top: 2.75rem !important;
+  margin-bottom: 2.75rem !important;
+}
+
+.ui-margin-y-12 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.ui-margin-y-14 {
+  margin-top: 3.5rem !important;
+  margin-bottom: 3.5rem !important;
+}
+
+.ui-margin-y-16 {
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
+}
+
+.ui-margin-y-20 {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+
+.ui-margin-y-24 {
+  margin-top: 6rem !important;
+  margin-bottom: 6rem !important;
+}
+
+.ui-margin-y-28 {
+  margin-top: 7rem !important;
+  margin-bottom: 7rem !important;
+}
+
+.ui-margin-y-32 {
+  margin-top: 8rem !important;
+  margin-bottom: 8rem !important;
+}
+
+.ui-margin-y-36 {
+  margin-top: 9rem !important;
+  margin-bottom: 9rem !important;
+}
+
+.ui-margin-y-40 {
+  margin-top: 10rem !important;
+  margin-bottom: 10rem !important;
+}
+
+.ui-margin-y-48 {
+  margin-top: 12rem !important;
+  margin-bottom: 12rem !important;
+}
+
+.ui-gap-0 {
+  gap: 0rem !important;
+}
+
+.ui-gap-1px {
+  gap: 0.0625rem !important;
+}
+
+.ui-gap-05 {
+  gap: 0.125rem !important;
+}
+
+.ui-gap-1 {
+  gap: 0.25rem !important;
+}
+
+.ui-gap-5px {
+  gap: 0.3125rem !important;
+}
+
+.ui-gap-105 {
+  gap: 0.375rem !important;
+}
+
+.ui-gap-2 {
+  gap: 0.5rem !important;
+}
+
+.ui-gap-205 {
+  gap: 0.625rem !important;
+}
+
+.ui-gap-3 {
+  gap: 0.75rem !important;
+}
+
+.ui-gap-4 {
+  gap: 1rem !important;
+}
+
+.ui-gap-5 {
+  gap: 1.25rem !important;
+}
+
+.ui-gap-6 {
+  gap: 1.5rem !important;
+}
+
+.ui-gap-7 {
+  gap: 1.75rem !important;
+}
+
+.ui-gap-8 {
+  gap: 2rem !important;
+}
+
+.ui-gap-9 {
+  gap: 2.25rem !important;
+}
+
+.ui-gap-10 {
+  gap: 2.5rem !important;
+}
+
+.ui-gap-11 {
+  gap: 2.75rem !important;
+}
+
+.ui-gap-12 {
+  gap: 3rem !important;
+}
+
+.ui-gap-14 {
+  gap: 3.5rem !important;
+}
+
+.ui-gap-16 {
+  gap: 4rem !important;
+}
+
+.ui-gap-20 {
+  gap: 5rem !important;
+}
+
+.ui-gap-24 {
+  gap: 6rem !important;
+}
+
+.ui-gap-28 {
+  gap: 7rem !important;
+}
+
+.ui-gap-32 {
+  gap: 8rem !important;
+}
+
+.ui-gap-36 {
+  gap: 9rem !important;
+}
+
+.ui-gap-40 {
+  gap: 10rem !important;
+}
+
+.ui-gap-48 {
+  gap: 12rem !important;
+}
+
+.ui-row-gap-0 {
+  row-gap: 0rem !important;
+}
+
+.ui-row-gap-1px {
+  row-gap: 0.0625rem !important;
+}
+
+.ui-row-gap-05 {
+  row-gap: 0.125rem !important;
+}
+
+.ui-row-gap-1 {
+  row-gap: 0.25rem !important;
+}
+
+.ui-row-gap-5px {
+  row-gap: 0.3125rem !important;
+}
+
+.ui-row-gap-105 {
+  row-gap: 0.375rem !important;
+}
+
+.ui-row-gap-2 {
+  row-gap: 0.5rem !important;
+}
+
+.ui-row-gap-205 {
+  row-gap: 0.625rem !important;
+}
+
+.ui-row-gap-3 {
+  row-gap: 0.75rem !important;
+}
+
+.ui-row-gap-4 {
+  row-gap: 1rem !important;
+}
+
+.ui-row-gap-5 {
+  row-gap: 1.25rem !important;
+}
+
+.ui-row-gap-6 {
+  row-gap: 1.5rem !important;
+}
+
+.ui-row-gap-7 {
+  row-gap: 1.75rem !important;
+}
+
+.ui-row-gap-8 {
+  row-gap: 2rem !important;
+}
+
+.ui-row-gap-9 {
+  row-gap: 2.25rem !important;
+}
+
+.ui-row-gap-10 {
+  row-gap: 2.5rem !important;
+}
+
+.ui-row-gap-11 {
+  row-gap: 2.75rem !important;
+}
+
+.ui-row-gap-12 {
+  row-gap: 3rem !important;
+}
+
+.ui-row-gap-14 {
+  row-gap: 3.5rem !important;
+}
+
+.ui-row-gap-16 {
+  row-gap: 4rem !important;
+}
+
+.ui-row-gap-20 {
+  row-gap: 5rem !important;
+}
+
+.ui-row-gap-24 {
+  row-gap: 6rem !important;
+}
+
+.ui-row-gap-28 {
+  row-gap: 7rem !important;
+}
+
+.ui-row-gap-32 {
+  row-gap: 8rem !important;
+}
+
+.ui-row-gap-36 {
+  row-gap: 9rem !important;
+}
+
+.ui-row-gap-40 {
+  row-gap: 10rem !important;
+}
+
+.ui-row-gap-48 {
+  row-gap: 12rem !important;
+}
+
+.ui-column-gap-0 {
+  column-gap: 0rem !important;
+}
+
+.ui-column-gap-1px {
+  column-gap: 0.0625rem !important;
+}
+
+.ui-column-gap-05 {
+  column-gap: 0.125rem !important;
+}
+
+.ui-column-gap-1 {
+  column-gap: 0.25rem !important;
+}
+
+.ui-column-gap-5px {
+  column-gap: 0.3125rem !important;
+}
+
+.ui-column-gap-105 {
+  column-gap: 0.375rem !important;
+}
+
+.ui-column-gap-2 {
+  column-gap: 0.5rem !important;
+}
+
+.ui-column-gap-205 {
+  column-gap: 0.625rem !important;
+}
+
+.ui-column-gap-3 {
+  column-gap: 0.75rem !important;
+}
+
+.ui-column-gap-4 {
+  column-gap: 1rem !important;
+}
+
+.ui-column-gap-5 {
+  column-gap: 1.25rem !important;
+}
+
+.ui-column-gap-6 {
+  column-gap: 1.5rem !important;
+}
+
+.ui-column-gap-7 {
+  column-gap: 1.75rem !important;
+}
+
+.ui-column-gap-8 {
+  column-gap: 2rem !important;
+}
+
+.ui-column-gap-9 {
+  column-gap: 2.25rem !important;
+}
+
+.ui-column-gap-10 {
+  column-gap: 2.5rem !important;
+}
+
+.ui-column-gap-11 {
+  column-gap: 2.75rem !important;
+}
+
+.ui-column-gap-12 {
+  column-gap: 3rem !important;
+}
+
+.ui-column-gap-14 {
+  column-gap: 3.5rem !important;
+}
+
+.ui-column-gap-16 {
+  column-gap: 4rem !important;
+}
+
+.ui-column-gap-20 {
+  column-gap: 5rem !important;
+}
+
+.ui-column-gap-24 {
+  column-gap: 6rem !important;
+}
+
+.ui-column-gap-28 {
+  column-gap: 7rem !important;
+}
+
+.ui-column-gap-32 {
+  column-gap: 8rem !important;
+}
+
+.ui-column-gap-36 {
+  column-gap: 9rem !important;
+}
+
+.ui-column-gap-40 {
+  column-gap: 10rem !important;
+}
+
+.ui-column-gap-48 {
+  column-gap: 12rem !important;
+}
+
+.cascade-debug-test {
+  color: hotpink !important;
+  border: 1px solid lime !important;
+}
+
 /*! uswds @version */
 /* Document
    ========================================================================== */
@@ -33394,2732 +35343,2732 @@ example:
   }
 }
 .text-xs\/0 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-xs\/1px {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-xs\/05 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-xs\/1 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-xs\/5px {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-xs\/105 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-xs\/2 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-xs\/205 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-xs\/3 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-xs\/305 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-xs\/4 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-xs\/405 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-xs\/5 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-xs\/505 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-xs\/6 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-xs\/605 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-xs\/7 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-xs\/705 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-xs\/8 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-xs\/9 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-xs\/10 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-xs\/11 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-xs\/12 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-xs\/14 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-xs\/16 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-xs\/18 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-xs\/20 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-xs\/22 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-xs\/24 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-xs\/28 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-xs\/32 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-xs\/36 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-xs\/40 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-xs\/44 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-xs\/48 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-xs\/52 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-xs\/56 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-xs\/60 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-xs\/64 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-xs\/72 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-xs\/80 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-xs\/96 {
-  font-size: 0.75rem !important;
+  font-size: 3 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 
 .text-sm\/0 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-sm\/1px {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-sm\/05 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-sm\/1 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-sm\/5px {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-sm\/105 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-sm\/2 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-sm\/205 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-sm\/3 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-sm\/305 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-sm\/4 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-sm\/405 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-sm\/5 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-sm\/505 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-sm\/6 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-sm\/605 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-sm\/7 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-sm\/705 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-sm\/8 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-sm\/9 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-sm\/10 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-sm\/11 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-sm\/12 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-sm\/14 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-sm\/16 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-sm\/18 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-sm\/20 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-sm\/22 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-sm\/24 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-sm\/28 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-sm\/32 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-sm\/36 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-sm\/40 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-sm\/44 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-sm\/48 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-sm\/52 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-sm\/56 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-sm\/60 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-sm\/64 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-sm\/72 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-sm\/80 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-sm\/96 {
-  font-size: 0.875rem !important;
+  font-size: 3.5 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 
 .text-md\/0 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-md\/1px {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-md\/05 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-md\/1 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-md\/5px {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-md\/105 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-md\/2 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-md\/205 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-md\/3 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-md\/305 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-md\/4 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-md\/405 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-md\/5 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-md\/505 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-md\/6 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-md\/605 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-md\/7 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-md\/705 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-md\/8 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-md\/9 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-md\/10 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-md\/11 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-md\/12 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-md\/14 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-md\/16 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-md\/18 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-md\/20 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-md\/22 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-md\/24 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-md\/28 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-md\/32 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-md\/36 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-md\/40 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-md\/44 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-md\/48 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-md\/52 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-md\/56 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-md\/60 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-md\/64 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-md\/72 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-md\/80 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-md\/96 {
-  font-size: 1rem !important;
+  font-size: 4 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 
 .text-lg\/0 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-lg\/1px {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-lg\/05 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-lg\/1 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-lg\/5px {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-lg\/105 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-lg\/2 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-lg\/205 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-lg\/3 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-lg\/305 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-lg\/4 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-lg\/405 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-lg\/5 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-lg\/505 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-lg\/6 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-lg\/605 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-lg\/7 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-lg\/705 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-lg\/8 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-lg\/9 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-lg\/10 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-lg\/11 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-lg\/12 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-lg\/14 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-lg\/16 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-lg\/18 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-lg\/20 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-lg\/22 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-lg\/24 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-lg\/28 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-lg\/32 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-lg\/36 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-lg\/40 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-lg\/44 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-lg\/48 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-lg\/52 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-lg\/56 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-lg\/60 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-lg\/64 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-lg\/72 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-lg\/80 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-lg\/96 {
-  font-size: 1.125rem !important;
+  font-size: 4.5 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 
 .text-xl\/0 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-xl\/1px {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-xl\/05 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-xl\/1 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-xl\/5px {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-xl\/105 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-xl\/2 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-xl\/205 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-xl\/3 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-xl\/305 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-xl\/4 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-xl\/405 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-xl\/5 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-xl\/505 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-xl\/6 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-xl\/605 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-xl\/7 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-xl\/705 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-xl\/8 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-xl\/9 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-xl\/10 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-xl\/11 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-xl\/12 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-xl\/14 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-xl\/16 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-xl\/18 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-xl\/20 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-xl\/22 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-xl\/24 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-xl\/28 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-xl\/32 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-xl\/36 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-xl\/40 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-xl\/44 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-xl\/48 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-xl\/52 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-xl\/56 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-xl\/60 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-xl\/64 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-xl\/72 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-xl\/80 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-xl\/96 {
-  font-size: 1.25rem !important;
+  font-size: 5 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 
 .text-2xl\/0 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-2xl\/1px {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-2xl\/05 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-2xl\/1 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-2xl\/5px {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-2xl\/105 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-2xl\/2 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-2xl\/205 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-2xl\/3 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-2xl\/305 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-2xl\/4 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-2xl\/405 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-2xl\/5 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-2xl\/505 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-2xl\/6 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-2xl\/605 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-2xl\/7 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-2xl\/705 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-2xl\/8 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-2xl\/9 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-2xl\/10 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-2xl\/11 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-2xl\/12 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-2xl\/14 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-2xl\/16 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-2xl\/18 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-2xl\/20 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-2xl\/22 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-2xl\/24 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-2xl\/28 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-2xl\/32 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-2xl\/36 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-2xl\/40 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-2xl\/44 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-2xl\/48 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-2xl\/52 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-2xl\/56 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-2xl\/60 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-2xl\/64 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-2xl\/72 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-2xl\/80 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-2xl\/96 {
-  font-size: 1.5rem !important;
+  font-size: 6 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 
 .text-3xl\/0 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-3xl\/1px {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-3xl\/05 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-3xl\/1 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-3xl\/5px {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-3xl\/105 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-3xl\/2 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-3xl\/205 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-3xl\/3 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-3xl\/305 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-3xl\/4 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-3xl\/405 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-3xl\/5 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-3xl\/505 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-3xl\/6 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-3xl\/605 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-3xl\/7 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-3xl\/705 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-3xl\/8 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-3xl\/9 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-3xl\/10 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-3xl\/11 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-3xl\/12 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-3xl\/14 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-3xl\/16 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-3xl\/18 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-3xl\/20 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-3xl\/22 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-3xl\/24 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-3xl\/28 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-3xl\/32 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-3xl\/36 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-3xl\/40 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-3xl\/44 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-3xl\/48 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-3xl\/52 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-3xl\/56 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-3xl\/60 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-3xl\/64 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-3xl\/72 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-3xl\/80 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-3xl\/96 {
-  font-size: 1.875rem !important;
+  font-size: 7.5 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 
 .text-4xl\/0 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-4xl\/1px {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-4xl\/05 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-4xl\/1 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-4xl\/5px {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-4xl\/105 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-4xl\/2 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-4xl\/205 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-4xl\/3 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-4xl\/305 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-4xl\/4 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-4xl\/405 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-4xl\/5 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-4xl\/505 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-4xl\/6 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-4xl\/605 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-4xl\/7 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-4xl\/705 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-4xl\/8 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-4xl\/9 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-4xl\/10 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-4xl\/11 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-4xl\/12 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-4xl\/14 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-4xl\/16 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-4xl\/18 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-4xl\/20 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-4xl\/22 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-4xl\/24 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-4xl\/28 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-4xl\/32 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-4xl\/36 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-4xl\/40 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-4xl\/44 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-4xl\/48 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-4xl\/52 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-4xl\/56 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-4xl\/60 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-4xl\/64 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-4xl\/72 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-4xl\/80 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-4xl\/96 {
-  font-size: 2.25rem !important;
+  font-size: 9 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 
 .text-5xl\/0 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-5xl\/1px {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-5xl\/05 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-5xl\/1 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-5xl\/5px {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-5xl\/105 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-5xl\/2 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-5xl\/205 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-5xl\/3 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-5xl\/305 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-5xl\/4 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-5xl\/405 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-5xl\/5 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-5xl\/505 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-5xl\/6 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-5xl\/605 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-5xl\/7 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-5xl\/705 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-5xl\/8 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-5xl\/9 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-5xl\/10 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-5xl\/11 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-5xl\/12 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-5xl\/14 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-5xl\/16 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-5xl\/18 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-5xl\/20 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-5xl\/22 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-5xl\/24 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-5xl\/28 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-5xl\/32 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-5xl\/36 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-5xl\/40 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-5xl\/44 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-5xl\/48 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-5xl\/52 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-5xl\/56 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-5xl\/60 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-5xl\/64 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-5xl\/72 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-5xl\/80 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-5xl\/96 {
-  font-size: 3rem !important;
+  font-size: 12 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 
 .text-6xl\/0 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-6xl\/1px {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-6xl\/05 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-6xl\/1 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-6xl\/5px {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-6xl\/105 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-6xl\/2 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-6xl\/205 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-6xl\/3 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-6xl\/305 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-6xl\/4 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-6xl\/405 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-6xl\/5 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-6xl\/505 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-6xl\/6 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-6xl\/605 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-6xl\/7 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-6xl\/705 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-6xl\/8 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-6xl\/9 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-6xl\/10 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-6xl\/11 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-6xl\/12 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-6xl\/14 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-6xl\/16 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-6xl\/18 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-6xl\/20 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-6xl\/22 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-6xl\/24 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-6xl\/28 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-6xl\/32 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-6xl\/36 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-6xl\/40 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-6xl\/44 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-6xl\/48 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-6xl\/52 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-6xl\/56 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-6xl\/60 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-6xl\/64 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-6xl\/72 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-6xl\/80 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-6xl\/96 {
-  font-size: 4rem !important;
+  font-size: 16 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 
 .text-7xl\/0 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-7xl\/1px {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-7xl\/05 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-7xl\/1 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-7xl\/5px {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-7xl\/105 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-7xl\/2 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-7xl\/205 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-7xl\/3 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-7xl\/305 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-7xl\/4 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-7xl\/405 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-7xl\/5 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-7xl\/505 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-7xl\/6 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-7xl\/605 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-7xl\/7 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-7xl\/705 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-7xl\/8 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-7xl\/9 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-7xl\/10 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-7xl\/11 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-7xl\/12 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-7xl\/14 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-7xl\/16 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-7xl\/18 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-7xl\/20 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-7xl\/22 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-7xl\/24 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-7xl\/28 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-7xl\/32 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-7xl\/36 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-7xl\/40 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-7xl\/44 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-7xl\/48 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-7xl\/52 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-7xl\/56 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-7xl\/60 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-7xl\/64 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-7xl\/72 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-7xl\/80 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-7xl\/96 {
-  font-size: 4.5rem !important;
+  font-size: 18 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 
 .text-8xl\/0 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-8xl\/1px {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-8xl\/05 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-8xl\/1 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-8xl\/5px {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-8xl\/105 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-8xl\/2 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-8xl\/205 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-8xl\/3 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-8xl\/305 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-8xl\/4 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-8xl\/405 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-8xl\/5 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-8xl\/505 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-8xl\/6 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-8xl\/605 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-8xl\/7 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-8xl\/705 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-8xl\/8 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-8xl\/9 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-8xl\/10 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-8xl\/11 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-8xl\/12 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-8xl\/14 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-8xl\/16 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-8xl\/18 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-8xl\/20 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-8xl\/22 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-8xl\/24 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-8xl\/28 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-8xl\/32 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-8xl\/36 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-8xl\/40 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-8xl\/44 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-8xl\/48 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-8xl\/52 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-8xl\/56 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-8xl\/60 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-8xl\/64 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-8xl\/72 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-8xl\/80 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-8xl\/96 {
-  font-size: 6rem !important;
+  font-size: 24 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 
 .text-9xl\/0 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 0) !important;
 }
 
 .text-9xl\/1px {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 1px) !important;
 }
 
 .text-9xl\/05 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 05) !important;
 }
 
 .text-9xl\/1 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 1) !important;
 }
 
 .text-9xl\/5px {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 5px) !important;
 }
 
 .text-9xl\/105 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 105) !important;
 }
 
 .text-9xl\/2 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 2) !important;
 }
 
 .text-9xl\/205 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 205) !important;
 }
 
 .text-9xl\/3 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 3) !important;
 }
 
 .text-9xl\/305 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 305) !important;
 }
 
 .text-9xl\/4 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 4) !important;
 }
 
 .text-9xl\/405 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 405) !important;
 }
 
 .text-9xl\/5 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 5) !important;
 }
 
 .text-9xl\/505 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 505) !important;
 }
 
 .text-9xl\/6 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 6) !important;
 }
 
 .text-9xl\/605 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 605) !important;
 }
 
 .text-9xl\/7 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 7) !important;
 }
 
 .text-9xl\/705 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 705) !important;
 }
 
 .text-9xl\/8 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 8) !important;
 }
 
 .text-9xl\/9 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 9) !important;
 }
 
 .text-9xl\/10 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 10) !important;
 }
 
 .text-9xl\/11 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 11) !important;
 }
 
 .text-9xl\/12 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 12) !important;
 }
 
 .text-9xl\/14 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 14) !important;
 }
 
 .text-9xl\/16 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 16) !important;
 }
 
 .text-9xl\/18 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 18) !important;
 }
 
 .text-9xl\/20 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 20) !important;
 }
 
 .text-9xl\/22 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 22) !important;
 }
 
 .text-9xl\/24 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 24) !important;
 }
 
 .text-9xl\/28 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 28) !important;
 }
 
 .text-9xl\/32 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 32) !important;
 }
 
 .text-9xl\/36 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 36) !important;
 }
 
 .text-9xl\/40 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 40) !important;
 }
 
 .text-9xl\/44 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 44) !important;
 }
 
 .text-9xl\/48 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 48) !important;
 }
 
 .text-9xl\/52 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 52) !important;
 }
 
 .text-9xl\/56 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 56) !important;
 }
 
 .text-9xl\/60 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 60) !important;
 }
 
 .text-9xl\/64 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 64) !important;
 }
 
 .text-9xl\/72 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 72) !important;
 }
 
 .text-9xl\/80 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 80) !important;
 }
 
 .text-9xl\/96 {
-  font-size: 8rem !important;
+  font-size: 32 !important;
   line-height: calc(var(--spacing) * 96) !important;
 }
 

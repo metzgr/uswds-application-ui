@@ -3,50 +3,95 @@
 // src/styles/uswds-application-ui/_settings.scss
 // 4-pt spacing scale
 $theme-use-rem: true;
+$theme-spacing-base-unit: 4px !global; // Set base for spacing-multiple() to 4px
 $theme-spacing-scale: (
-  "0":    0rem,
-  "1px":   .0625rem,  // 1px
-  "05":  .125rem,   // 2px
-  "1":    .25rem,    // 4px
-  "5px":    .313rem,    // 5px
-  "105":  .375rem,   // 6px
-  "2":    .5rem,     // 8px
-  "205":  .625rem,   // 10px
-  "3":    .75rem,    // 12px
-  "305":  .875rem,   // 14px
-  "4":    1rem,      // 16px
-  "405":    1.125rem,      // 18px
-  "5":    1.25rem,   // 20px
-  "505":    1.375rem,      // 22px
-  "6":    1.5rem,    // 24px
-  "605":    1.625rem,      // 26px
-  "7":    1.75rem,   // 28px
-  "705":    1.875rem,    // 30px
-  "8":    2rem,      // 32px
-  "9":    2.25rem,   // 36px
-  "10":   2.5rem,    // 40px
-  "11":   2.75rem,   // 44px
-  "12":   3rem,      // 48px
-  "14":   3.5rem,    // 56px
-  "16":   4rem,      // 64px
-  "18":   4.5rem,    // 72px
-  "20":   5rem,      // 80px
-  "22":   5.25rem,   // 88px
-  "24":   6rem,      // 96px
-  "28":   7rem,      // 112px
-  "32":   8rem,      // 128px
-  "36":   9rem,      // 144px
-  "40":   10rem,     // 160px
-  "44":   11rem,     // 176px
-  "48":   12rem,     // 192px
-  "52":   13rem,     // 208px
-  "56":   14rem,     // 224px
-  "60":   15rem,     // 240px
-  "64":   16rem,     // 256px
-  "72":   18rem,     // 288px
-  "80":   20rem,     // 320px
-  "96":   24rem      // 384px
+  "0":    0,
+  "1px":  0.0625rem,  // 1px
+  "05": 0.5,        // 2px
+  "1":    1,          // 4px
+  "5px":  0.3125rem,  // 5px (corrected from 0.313rem)
+  "105":1.5,        // 6px
+  "2":    2,          // 8px
+  "205":2.5,        // 10px
+  "3":    3,          // 12px
+  "305":3.5,        // 14px
+  "4":    4,          // 16px
+  "405":4.5,        // 18px
+  "5":    5,          // 20px
+  "505":5.5,        // 22px
+  "6":    6,          // 24px
+  "605":6.5,        // 26px
+  "7":    7,          // 28px
+  "705":7.5,        // 30px
+  "8":    8,          // 32px
+  "9":    9,          // 36px
+  "10":   10,         // 40px
+  "11":   11,         // 44px
+  "12":   12,         // 48px
+  "14":   14,         // 56px
+  "16":   16,         // 64px
+  "18":   18,         // 72px
+  "20":   20,         // 80px
+  "22":   22,         // 88px
+  "24":   24,         // 96px
+  "28":   28,         // 112px
+  "32":   32,         // 128px
+  "36":   36,         // 144px
+  "40":   40,         // 160px
+  "44":   44,         // 176px
+  "48":   48,         // 192px
+  "52":   52,         // 208px
+  "56":   56,         // 224px
+  "60":   60,         // 240px
+  "64":   64,         // 256px
+  "72":   72,         // 288px
+  "80":   80,         // 320px
+  "96":   96          // 384px
 );
+
+// Use your custom scale as the source for USWDS spacing utility values
+$theme-spacing-units: $theme-spacing-scale !global;
+
+// Tell USWDS which keys from $theme-spacing-scale to generate utility classes for
+// (e.g., p-1, mt-2, gap-3, etc., using your custom scale values)
+$theme-utility-spacing-suffixes: (
+  "0",
+  "1px",
+  "05",
+  "1",
+  "5px",
+  "105",
+  "2",
+  "205",
+  "3",
+  "305",
+  "4",
+  "405",
+  "5",
+  "505",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "14",
+  "16",
+  "20",
+  "24",
+  "28",
+  "32",
+  "36",
+  "40",
+  "48",
+  "neg-1px", // Ensure negative versions are also available if needed directly
+  "neg-05",
+  "neg-1",
+  "neg-2",
+  "neg-3",
+  "neg-4"
+) !global;
 
 // -----------------------------------------------------------------------------
 // Type scale (font-size) and line-height tokens
