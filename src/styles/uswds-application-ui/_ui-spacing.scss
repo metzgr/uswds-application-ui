@@ -38,7 +38,14 @@ $custom-spacing-px-scale: (
   "32":   128,
   "36":   144,
   "40":   160,
-  "48":   192
+  "48":   192,
+  // Negative values
+  "neg-1px": -1,
+  "neg-05":  -2,
+  "neg-1":   -4,
+  "neg-2":   -8,
+  "neg-3":   -12,
+  "neg-4":   -16
 );
 
 // Suffixes from the scale for which to generate utilities.
