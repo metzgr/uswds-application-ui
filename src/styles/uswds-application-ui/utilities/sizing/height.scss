@@ -1,7 +1,9 @@
 
 
 @use "uswds-core" as *;
-@use "../../_settings" as *;
+
+// Settings like $theme-spacing-scale are globally available because 
+// style.scss forwards _settings.scss before forwarding this file.
 
 // -----------------------------------------------------------------------------
 // Sizing utilities
@@ -15,4 +17,9 @@
 // These utilities generate **responsive variants** out of the box (e.g., tablet:height-20, desktop:height-40).
 // -----------------------------------------------------------------------------
 
-@include add-utility("height", $theme-spacing-scale, "height", true);
+@include add-utility(
+  "height",
+  $theme-spacing-scale, // This should now be resolved globally
+  "height",
+  true
+);

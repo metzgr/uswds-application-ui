@@ -4,14 +4,3 @@
 // -----------------------------------------------------------------------------
 // Align-items utilities (responsive)
 // -----------------------------------------------------------------------------
-@include add-utility("align-items", $align-items-map, "align-items", true);
-
-// -----------------------------------------------------------------------------
-// Align-content utilities (responsive)
-// -----------------------------------------------------------------------------
-@include add-utility("align-content", $align-content-map, "align-content", true);
-
-// -----------------------------------------------------------------------------
-// Align-self utilities (responsive)
-// -----------------------------------------------------------------------------
-@include add-utility("align-self", $align-self-map, "align-self", true);

@@ -7,19 +7,3 @@
 // -----------------------------------------------------------------------------
 // Flex shorthand utilities (responsive)
 // -----------------------------------------------------------------------------
-@include add-utility("flex",           $flex-map,           "flex",           true);
-
-// -----------------------------------------------------------------------------
-// Flex direction utilities (responsive)
-// -----------------------------------------------------------------------------
-@include add-utility("flex-direction", $flex-direction-map, "flex-direction", true);
-
-// -----------------------------------------------------------------------------
-// Flex wrap utilities (responsive)
-// -----------------------------------------------------------------------------
-@include add-utility("flex-wrap",      $flex-wrap-map,      "flex-wrap",      true);
-// ---------------------------------------------------------------------------
-// Flex grow & shrink utilities (responsive)
-// ---------------------------------------------------------------------------
-@include add-utility("grow",   $flex-grow-map,   "flex-grow",  true);
-@include add-utility("shrink", $flex-shrink-map, "flex-shrink", true);

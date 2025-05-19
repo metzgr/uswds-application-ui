@@ -1,7 +1,0 @@
-@use "uswds-core" as *;
-@use "../../_settings" as *;
-
-// -----------------------------------------------------------------------------
-// Aspect-ratio utilities (responsive)
-// -----------------------------------------------------------------------------
-@include add-utility("aspect", $aspect-ratio-map, "aspect-ratio", true);

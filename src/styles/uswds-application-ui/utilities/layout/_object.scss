@@ -4,9 +4,3 @@
 // -----------------------------------------------------------------------------
 // Object-fit utilities (responsive)
 // -----------------------------------------------------------------------------
-@include add-utility("object-fit",     $object-fit-map,     "object-fit",     true);
-
-// -----------------------------------------------------------------------------
-// Object-position utilities (responsive)
-// -----------------------------------------------------------------------------
-@include add-utility("object-position", $object-position-map, "object-position", true);

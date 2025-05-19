@@ -2,16 +2,6 @@
 @use "uswds-core" as *;
 @use "../../_settings" as *;
 
-// ----------------------------------------------------------------------------
-// Example arbitrary padding invocations:
-//
-// Generate all-sides padding utility:
-// @include arbitrary-padding("p", "5vw");          // creates .p-[5vw] { padding: 5vw; }
-//
-// Generate directional padding utilities:
-// @include arbitrary-padding("pt", "1.25rem");     // creates .pt-[1.25rem] { padding-top: 1.25rem; }
-// @include arbitrary-padding("px", "var(--gap)");  // creates .px-[var(--gap)] { padding-left/right: var(--gap); }
-
 // -----------------------------------------------------------------------------
 // Padding utilities
 // -----------------------------------------------------------------------------

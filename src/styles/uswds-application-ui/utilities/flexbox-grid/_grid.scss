@@ -9,18 +9,3 @@
 // -----------------------------------------------------------------------------
 // Grid template columns & rows (responsive)
 // -----------------------------------------------------------------------------
-@include add-utility("grid-cols", $grid-cols-map, "grid-template-columns", true);
-@include add-utility("grid-rows", $grid-rows-map, "grid-template-rows", true);
-
-// -----------------------------------------------------------------------------
-// Grid column & row span utilities (responsive)
-// -----------------------------------------------------------------------------
-@include add-utility("col-span", $col-span-map, "grid-column", true);
-@include add-utility("row-span", $row-span-map, "grid-row", true);
-
-// -----------------------------------------------------------------------------
-// Grid auto-placement utilities (responsive)
-// -----------------------------------------------------------------------------
-@include add-utility("grid-flow",    $grid-auto-flow-map, "grid-auto-flow",    true);
-@include add-utility("auto-cols",    $auto-cols-map,      "grid-auto-columns", true);
-@include add-utility("auto-rows",    $auto-rows-map,      "grid-auto-rows",    true);

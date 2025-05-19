@@ -4,14 +4,3 @@
 // -----------------------------------------------------------------------------
 // Place-content utilities (responsive)
 // -----------------------------------------------------------------------------
-@include add-utility("place-content", $place-content-map, "place-content", true);
-
-// -----------------------------------------------------------------------------
-// Place-items utilities (responsive)
-// -----------------------------------------------------------------------------
-@include add-utility("place-items", $place-items-map, "place-items", true);
-
-// -----------------------------------------------------------------------------
-// Place-self utilities (responsive)
-// -----------------------------------------------------------------------------
-@include add-utility("place-self", $place-self-map, "place-self", true);

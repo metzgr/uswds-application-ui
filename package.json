@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass src/styles:dist --no-source-map"
+    "build": "sass --load-path=node_modules/@uswds/uswds/packages src/styles/style.scss:dist/style.css --no-source-map"
   },
   "repository": {
     "type": "git",

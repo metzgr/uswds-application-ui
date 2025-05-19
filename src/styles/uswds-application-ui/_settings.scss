@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "sass:math";
 // src/styles/uswds-application-ui/_settings.scss
 // 4-pt spacing scale
 $theme-use-rem: true;
@@ -51,19 +53,19 @@ $theme-spacing-scale: (
 // Uses spacing-scale tokens for matching values; add raw rems where needed.
 // -----------------------------------------------------------------------------
 $theme-type-scale: (
-  xs:   map-get($theme-spacing-scale, "3"),     // 0.75rem (12px)
-  sm:   map-get($theme-spacing-scale, "305"),   // 0.875rem (14px)
-  md: map-get($theme-spacing-scale, "4"),     // 1rem (16px)
-  lg:   map-get($theme-spacing-scale, "405"),   // 1.125rem (18px)
-  xl:   map-get($theme-spacing-scale, "5"),     // 1.25rem (20px)
-  "2xl": map-get($theme-spacing-scale, "6"),    // 1.5rem (24px)
-  "3xl": map-get($theme-spacing-scale, "705"),   // 1.875rem (30px)
-  "4xl": map-get($theme-spacing-scale, "9"),    // 2.25rem (36px)
-  "5xl": map-get($theme-spacing-scale, "12"),   // 3rem (48px)
-  "6xl": map-get($theme-spacing-scale, "16"),   // 4rem (64px)
-  "7xl": map-get($theme-spacing-scale, "18"),  // 4.5rem (72px)
-  "8xl": map-get($theme-spacing-scale, "24"),   // 6rem (96px)
-  "9xl": map-get($theme-spacing-scale, "32")    // 8rem (128px)
+  xs:   map.get($theme-spacing-scale, "3"),     // 0.75rem (12px)
+  sm:   map.get($theme-spacing-scale, "305"),   // 0.875rem (14px)
+  md:   map.get($theme-spacing-scale, "4"),     // 1rem (16px)
+  lg:   map.get($theme-spacing-scale, "405"),   // 1.125rem (18px)
+  xl:   map.get($theme-spacing-scale, "5"),     // 1.25rem (20px)
+  "2xl": map.get($theme-spacing-scale, "6"),    // 1.5rem (24px)
+  "3xl": map.get($theme-spacing-scale, "705"),   // 1.875rem (30px)
+  "4xl": map.get($theme-spacing-scale, "9"),    // 2.25rem (36px)
+  "5xl": map.get($theme-spacing-scale, "12"),   // 3rem (48px)
+  "6xl": map.get($theme-spacing-scale, "16"),   // 4rem (64px)
+  "7xl": map.get($theme-spacing-scale, "18"),  // 4.5rem (72px)
+  "8xl": map.get($theme-spacing-scale, "24"),   // 6rem (96px)
+  "9xl": map.get($theme-spacing-scale, "32")    // 8rem (128px)
 );
 
 $theme-line-height-scale: (
@@ -83,12 +85,86 @@ $theme-line-height-scale: (
   none:  1     // line-height-none utility
 );
 
-// grayscale brand palette (derived from USWDS gray tokens)
-$theme-color-base-lightest: map-get(map-get($theme-color-palette, gray), 5);
-$theme-color-base-light:   map-get(map-get($theme-color-palette, gray), 10);
-$theme-color-base:         map-get(map-get($theme-color-palette, gray), 30);
-$theme-color-base-dark:    map-get(map-get($theme-color-palette, gray), 60);
-$theme-color-base-darkest: map-get(map-get($theme-color-palette, gray), 80);
+// -----------------------------------------------------------------------------
+// Override USWDS color palettes with custom hex scales
+// This definition must come BEFORE variables that use it (e.g., $theme-color-base-lightest).
+// These definitions will be used by USWDS when it initializes.
+// -----------------------------------------------------------------------------
+$theme-color-palette: (
+  gray: (
+    5:  #FAFAFA,
+    10: #F5F5F5,
+    20: #E9EAEB,
+    30: #D5D7DA,
+    40: #A4A7AE,
+    50: #717680,
+    60: #535862,
+    70: #414651,
+    80: #252B37,
+    90: #181D27,
+    95: #0A0D12
+  ),
+  red: (
+    5:  #FEF3F2,
+    10: #FEE4E2,
+    20: #FECDCA,
+    30: #FDA29B,
+    40: #F97066,
+    50: #F04438,
+    60: #D92D20,
+    70: #B42318,
+    80: #912018,
+    90: #7A271A,
+    95: #55160C
+  ),
+  indigo: (
+    5:  #EEF4FF,
+    10: #E0EAFF,
+    20: #C7D7FE,
+    30: #A4BCFD,
+    40: #8098F9,
+    50: #6172F3,
+    60: #444CE7,
+    70: #3538CD,
+    80: #2D31A6,
+    90: #2D3282,
+    95: #1F235B
+  ),
+  orange: (
+    5:  #FFF4ED,
+    10: #FFE6D5,
+    20: #FFD6AE,
+    30: #FF9C66,
+    40: #FF692E,
+    50: #FF4405,
+    60: #E62E05,
+    70: #BC1B06,
+    80: #97180C,
+    90: #771A0D,
+    95: #57130A
+  ),
+  green: (
+    5:  #ECFDF3,
+    10: #DCFAE6,
+    20: #ABEFC6,
+    30: #75E0A7,
+    40: #47CD89,
+    50: #17B26A,
+    60: #079455,
+    70: #067647,
+    80: #085D3A,
+    90: #074D31,
+    95: #053321
+  )
+  // Add other custom palettes here if needed, following the same structure.
+);
+
+// grayscale brand palette (derived from THE MODIFIED $theme-color-palette above)
+$theme-color-base-lightest: map.get(map.get($theme-color-palette, gray), 5);
+$theme-color-base-light:   map.get(map.get($theme-color-palette, gray), 10);
+$theme-color-base:         map.get(map.get($theme-color-palette, gray), 30);
+$theme-color-base-dark:    map.get(map.get($theme-color-palette, gray), 60);
+$theme-color-base-darkest: map.get(map.get($theme-color-palette, gray), 80);
 
 // map primary + secondary to grayscale tokens
 
@@ -96,129 +172,77 @@ $theme-color-primary:        $theme-color-base-dark;
 $theme-color-primary-darker: $theme-color-base-darkest;
 $theme-color-secondary:      $theme-color-base;
 
-// -----------------------------------------------------------------------------
-// Extend every USWDS color palette with a 95-level (darkest) shade
-// -----------------------------------------------------------------------------
-@each $color-name, $color-map in $theme-color-palette {
-  $theme-color-palette: map-merge(
-    $theme-color-palette,
-    (
-      $color-name: map-merge(
-        $color-map,
-        (95: #000000) // Replace #000000 with your desired darkest hex
-      )
-    )
-  );
-}
-
-// -----------------------------------------------------------------------------
-// Override USWDS color palettes with custom hex scales
-// -----------------------------------------------------------------------------
-$theme-color-palette: map-merge(
-  $theme-color-palette,
-  (
-    gray: (
-      5:  #FAFAFA,
-      10: #F5F5F5,
-      20: #E9EAEB,
-      30: #D5D7DA,
-      40: #A4A7AE,
-      50: #717680,
-      60: #535862,
-      70: #414651,
-      80: #252B37,
-      90: #181D27,
-      95: #0A0D12
-    ),
-    red: (
-      5:  #FEF3F2,
-      10: #FEE4E2,
-      20: #FECDCA,
-      30: #FDA29B,
-      40: #F97066,
-      50: #F04438,
-      60: #D92D20,
-      70: #B42318,
-      80: #912018,
-      90: #7A271A,
-      95: #55160C
-    ),
-    indigo: (
-      5:  #EEF4FF,
-      10: #E0EAFF,
-      20: #C7D7FE,
-      30: #A4BCFD,
-      40: #8098F9,
-      50: #6172F3,
-      60: #444CE7,
-      70: #3538CD,
-      80: #2D31A6,
-      90: #2D3282,
-      95: #1F235B
-    ),
-    orange: (
-      5:  #FFF4ED,
-      10: #FFE6D5,
-      20: #FFD6AE,
-      30: #FF9C66,
-      40: #FF692E,
-      50: #FF4405,
-      60: #E62E05,
-      70: #BC1B06,
-      80: #97180C,
-      90: #771A0D,
-      95: #57130A
-    ),
-    green: (
-      5:  #ECFDF3,
-      10: #DCFAE6,
-      20: #ABEFC6,
-      30: #75E0A7,
-      40: #47CD89,
-      50: #17B26A,
-      60: #079455,
-      70: #067647,
-      80: #085D3A,
-      90: #074D31,
-      95: #053321
-    )
-  )
+// Define which color families to use for background utilities
+// This tells USWDS to generate usa-bg-* classes for all shades in these families.
+$theme-utility-background-colors: (
+  "gray",
+  "red",
+  "indigo",
+  "orange",
+  "green"
 );
 
+// NOTE: The loop from original lines 101-111 that attempted to add '95' shades
+// and the subsequent map-merge for $theme-color-palette (original line 116) have been
+// addressed by defining $theme-color-palette directly and fully above.
 
 
-// Disable default USWDS width/height utilities so we can regenerate a comprehensive set
-$theme-utilities: map-merge(
-  $theme-utilities,
-  (
-    "height": false,
-    "width":  false,
-    "max-width":  false,
-    "min-width":  false,
-    "max-height": false,
-    "min-height": false,
-    "measure":    false,
-    "grid-gap":   false,
-    "margin":  false,
-    "padding": false,
-    "display-grid": false,
-    "grid-template-columns": false,
-    "grid-column": false,
-    "grid-template-rows": false,
-    "grid-row": false,
-    "grid-auto-flow": false,
-    "grid-auto-columns": false,
-    "grid-auto-rows": false,
-    "display-none":         false,
-    "display-block":        false,
-    "display-inline":       false,
-    "display-inline-block": false,
-    "display-inline-flex":  false,
-    "display-inline-grid":  false,
-    "display-list-item":    false,
-    "display-flex":         false,
-  )
-);
+
+// Configure USWDS utility generation
+// --- Sizing Utilities (Height, Width) ---
+$height-settings:
+  (output: true);
+$height-manual-values: $theme-spacing-scale;
+
+$width-settings:
+  (output: true);
+$width-manual-values: $theme-spacing-scale;
+
+$max-width-settings:
+  (output: true);
+$max-width-manual-values: $theme-spacing-scale;
+
+$min-width-settings:
+  (output: true);
+$min-width-manual-values: $theme-spacing-scale;
+
+$max-height-settings:
+  (output: true);
+$max-height-manual-values: $theme-spacing-scale;
+
+$min-height-settings:
+  (output: true);
+$min-height-manual-values: $theme-spacing-scale;
+
+$measure-settings:
+  (output: false); // For .measure-* utilities, kept as false per original setting
+
+// --- Spacing Utilities (Margin, Padding) ---
+$margin-settings:
+  (output: true);
+$margin-manual-values: $theme-spacing-scale;
+
+$padding-settings:
+  (output: true);
+$padding-manual-values: $theme-spacing-scale;
+
+// Grid layout utilities (not to be confused with display: grid)
+$theme-utility-grid-gap: false;
+$theme-utility-grid-template-columns: false;
+$theme-utility-grid-column: false;
+$theme-utility-grid-template-rows: false;
+$theme-utility-grid-row: false;
+$theme-utility-grid-auto-flow: false;
+$theme-utility-grid-auto-columns: false;
+$theme-utility-grid-auto-rows: false;
+
+// Spacing utilities
+$theme-utility-margin: false;  // Disables all margin utilities (.margin-1, .margin-x-1, etc.)
+$theme-utility-padding: false; // Disables all padding utilities (.padding-1, .padding-x-1, etc.)
+
+// Display utilities
+// Setting this to false disables .d-none, .d-block, .d-flex, .d-grid, etc.
+$theme-utility-display: false;
 // -----------------------------------------------------------------------------
 // Utility value maps for responsive add-utility generation
 // -----------------------------------------------------------------------------
@@ -445,7 +469,7 @@ $display-map: (
 $margin-negative-map: ();
 
 @each $key, $val in $theme-spacing-scale {
-  $margin-negative-map: map-merge(
+  $margin-negative-map: map.merge(
     $margin-negative-map,
     ("neg-#{$key}": -#{$val})
   );
@@ -497,8 +521,8 @@ $object-position-map: (
 // -----------------------------------------------------------------------------
 $aspect-ratio-map: (
   auto:   auto,
-  square: 1 / 1,
-  video:  16 / 9
+  square: math.div(1, 1),
+  video:  math.div(16, 9)
 );
 
 // -----------------------------------------------------------------------------

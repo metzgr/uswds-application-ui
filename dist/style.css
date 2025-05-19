@@ -1,0 +1,18 @@
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 4 | @use "../_settings" as *;
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src/styles/uswds-application-ui/utilities/flexbox-grid/_gap.scss 4:1  @forward
+ *   src/styles/style.scss 36:1                                            root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @use \"../_settings\" as *;\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src/styles/uswds-application-ui/utilities/flexbox-grid/_gap.scss 4:1  @forward\a   src/styles/style.scss 36:1                                            root stylesheet";
+}
