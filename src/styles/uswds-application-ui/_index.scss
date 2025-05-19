@@ -1,0 +1,14 @@
+// src/styles/uswds-application-ui/_index.scss
+
+// Forward all custom ui-* prefixed utility modules
+@forward "settings"; // Settings should usually be forwarded if other ui-* modules depend on its vars being seen by USWDS
+@forward "ui-spacing";
+@forward "ui-display";
+@forward "ui-flexbox";
+@forward "ui-typography";
+@forward "ui-grid"; // New grid utilities
+
+// Forward other non-ui-prefixed utility partials from subdirectories
+// (These are typically standard USWDS utilities or custom ones following USWDS patterns)
+// This line assumes 'utilities/_index.scss' exists and correctly forwards individual utility files.
+@forward "./utilities";

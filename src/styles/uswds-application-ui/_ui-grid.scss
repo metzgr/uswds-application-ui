@@ -1,0 +1,113 @@
+// src/styles/uswds-application-ui/_ui-grid.scss
+@use "sass:map";
+@use "./settings" as s;
+
+@mixin generate-custom-ui-grid-base-utilities {
+  .ui-grid {
+    display: grid !important;
+  }
+
+  // Grid Template Columns (1-12)
+  @for $i from 1 through 12 {
+    .ui-grid-cols-#{$i} {
+      grid-template-columns: repeat(#{$i}, minmax(0, 1fr)) !important;
+    }
+  }
+  .ui-grid-cols-none {
+    grid-template-columns: none !important;
+  }
+
+  // Grid Column Span (1-12)
+  @for $i from 1 through 12 {
+    .ui-col-span-#{$i} {
+      grid-column: span #{$i} / span #{$i} !important;
+    }
+  }
+  .ui-col-span-full {
+    grid-column: 1 / -1 !important;
+  }
+
+  // Grid Template Rows (e.g., 1-6, can be expanded)
+  @for $i from 1 through 6 {
+    .ui-grid-rows-#{$i} {
+      grid-template-rows: repeat(#{$i}, minmax(0, 1fr)) !important;
+    }
+  }
+   .ui-grid-rows-none {
+    grid-template-rows: none !important;
+  }
+
+  // Grid Row Span (e.g., 1-6, can be expanded)
+  @for $i from 1 through 6 {
+    .ui-row-span-#{$i} {
+      grid-row: span #{$i} / span #{$i} !important;
+    }
+  }
+   .ui-row-span-full {
+    grid-row: 1 / -1 !important;
+  }
+
+  // Auto flow utilities
+  .ui-grid-flow-row { grid-auto-flow: row !important; }
+  .ui-grid-flow-col { grid-auto-flow: column !important; }
+  .ui-grid-flow-row-dense { grid-auto-flow: row dense !important; }
+  .ui-grid-flow-col-dense { grid-auto-flow: column dense !important; }
+}
+
+@mixin generate-custom-ui-grid-responsive-utilities {
+  @each $bp-key in s.$custom-ui-utility-breakpoint-keys {
+    $prefix: map.get(s.$custom-ui-breakpoint-prefix-map, $bp-key);
+    $breakpoint-value: map.get(s.$custom-ui-breakpoints, $bp-key);
+
+    @if $prefix != null and $breakpoint-value != null {
+      @media (min-width: #{$breakpoint-value}) {
+        .#{$prefix}ui-grid {
+          display: grid !important;
+        }
+
+        @for $i from 1 through 12 {
+          .#{$prefix}ui-grid-cols-#{$i} {
+            grid-template-columns: repeat(#{$i}, minmax(0, 1fr)) !important;
+          }
+        }
+        .#{$prefix}ui-grid-cols-none {
+           grid-template-columns: none !important;
+        }
+
+        @for $i from 1 through 12 {
+          .#{$prefix}ui-col-span-#{$i} {
+            grid-column: span #{$i} / span #{$i} !important;
+          }
+        }
+        .#{$prefix}ui-col-span-full {
+           grid-column: 1 / -1 !important;
+        }
+        
+        @for $i from 1 through 6 {
+          .#{$prefix}ui-grid-rows-#{$i} {
+            grid-template-rows: repeat(#{$i}, minmax(0, 1fr)) !important;
+          }
+        }
+        .#{$prefix}ui-grid-rows-none {
+           grid-template-rows: none !important;
+        }
+        
+        @for $i from 1 through 6 {
+          .#{$prefix}ui-row-span-#{$i} {
+            grid-row: span #{$i} / span #{$i} !important;
+          }
+        }
+        .#{$prefix}ui-row-span-full {
+          grid-row: 1 / -1 !important;
+        }
+
+        .#{$prefix}ui-grid-flow-row { grid-auto-flow: row !important; }
+        .#{$prefix}ui-grid-flow-col { grid-auto-flow: column !important; }
+        .#{$prefix}ui-grid-flow-row-dense { grid-auto-flow: row dense !important; }
+        .#{$prefix}ui-grid-flow-col-dense { grid-auto-flow: column dense !important; }
+      }
+    } @else {
+      @warn "Breakpoint prefix or value not found for key: #{$bp-key}. Responsive utilities for this breakpoint might not be generated correctly.";
+    }
+  }
+}

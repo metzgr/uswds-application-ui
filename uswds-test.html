@@ -125,7 +125,7 @@
                 <h2 class="font-heading-xl">UI Flexbox Utilities Test</h2>
 
                 <p class="margin-bottom-1"><strong>Flex Direction, Wrap, Align Items, Justify Content:</strong></p>
-                <div class="bg-primary-lighter padding-2 margin-bottom-2 ui-display-flex ui-flex-row ui-flex-wrap ui-items-start ui-justify-between" style="height: 150px;">
+                <div class="bg-primary-lighter padding-2 margin-bottom-2 ui-display-flex ui-flex-row ui-flex-wrap ui-items-start ui-justify-between">
                     <div class="padding-1 margin-1 border-2px border-base-dark ui-order-2">Item A (order 2)</div>
                     <div class="padding-1 margin-1 border-2px border-base-dark ui-order-1">Item B (order 1)</div>
                     <div class="padding-1 margin-1 border-2px border-base-dark">Item C</div>
@@ -134,14 +134,14 @@
                 </div>
 
                 <p class="margin-bottom-1"><strong>Column, Centered, Spaced:</strong></p>
-                <div class="bg-secondary-lighter padding-2 margin-bottom-2 ui-display-flex ui-flex-col ui-items-center ui-justify-around" style="height: 200px;">
+                <div class="bg-secondary-lighter padding-2 margin-bottom-2 ui-display-flex ui-flex-col ui-items-center ui-justify-around">
                     <div class="padding-1 margin-1 border-2px border-base-dark">Col Item 1</div>
                     <div class="padding-1 margin-1 border-2px border-base-dark ui-flex-grow">Col Item 2 (flex-grow)</div>
                     <div class="padding-1 margin-1 border-2px border-base-dark">Col Item 3</div>
                 </div>
                 
                 <p class="margin-bottom-1"><strong>Place Content and Place Items (Example: place-content-center):</strong></p>
-                <div class="bg-accent-warm-lighter padding-2 margin-bottom-2 ui-display-flex ui-flex-wrap ui-place-content-center ui-items-center" style="height: 100px; width: 300px;">
+                <div class="bg-accent-warm-lighter padding-2 margin-bottom-2 ui-display-flex ui-flex-wrap ui-place-content-center ui-items-center">
                     <div class="padding-1 m-1 border-2px border-base-dark">P1</div>
                     <div class="padding-1 m-1 border-2px border-base-dark">P2</div>
                 </div>
@@ -151,7 +151,68 @@
                     <div class="padding-1 margin-1 border-2px border-base-dark ui-flex-1">ui-flex-1</div>
                     <div class="padding-1 margin-1 border-2px border-base-dark ui-flex-auto">ui-flex-auto</div>
                     <div class="padding-1 margin-1 border-2px border-base-dark ui-flex-initial">ui-flex-initial</div>
-                    <div class="padding-1 margin-1 border-2px border-base-dark ui-flex-none" style="width: 100px;">ui-flex-none (fixed width)</div>
+                    <div class="padding-1 margin-1 border-2px border-base-dark ui-flex-none">ui-flex-none (fixed width)</div>
+                </div>
+            </section>
+
+            <!-- UI Dashboard Grid Layout Test -->
+            <section class="margin-y-4 padding-y-4 border-top-1px border-base-lighter">
+                <h2 class="ui-font-sans ui-text-xl margin-bottom-4">UI Dashboard Grid Layout Test</h2>
+                <p class="usa-prose margin-bottom-2">This example showcases a dashboard-like layout using the enhanced <code>ui-grid</code>, <code>ui-grid-cols-12</code>, <code>ui-col-span-*</code>, and <code>ui-gap-*</code> utilities. It demonstrates how to create complex, responsive layouts for application UIs.</p>
+                
+                <div class="ui-grid ui-grid-cols-12 ui-gap-4 ui-padding-4 bg-base-lightest"> 
+                    <!-- Header/Title Widget -->
+                    <div class="ui-col-span-12 ui-padding-4 radius-md bg-primary-darker text-white"> 
+                        <h3 class="ui-font-sans ui-text-lg ui-margin-bottom-1">Dashboard Overview</h3>
+                        <p class="ui-font-sans ui-text-sm">Welcome to your dashboard. All systems nominal.</p>
+                    </div>
+
+                    <!-- Main Chart Area (Large Widget) -->
+                    <div class="ui-col-span-12 tablet:ui-col-span-8 ui-row-span-2 ui-padding-4 radius-md bg-white">
+                        <h4 class="ui-font-sans ui-text-lg ui-margin-bottom-2">Sales Trends (Main Chart)</h4>
+                        <div class="ui-padding-6 ui-display-flex ui-items-center ui-justify-center"> 
+                            <p class="ui-text-base-dark">[Chart Placeholder - Spans 8/12 columns on tablet+]</p>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar / KPIs (Smaller Widgets) -->
+                    <div class="ui-col-span-12 tablet:ui-col-span-4 ui-padding-0 ui-display-flex ui-flex-col ui-gap-4">
+                        <div class="ui-padding-4 radius-md ui-flex-1 bg-white">
+                            <h4 class="ui-font-sans ui-text-md ui-margin-bottom-1">Key Metric 1</h4>
+                            <p class="ui-font-sans ui-text-xl ui-text-primary">1,234</p>
+                            <p class="ui-font-sans ui-text-xs ui-text-success">+5% vs last month</p>
+                        </div>
+                        <div class="ui-padding-4 radius-md ui-flex-1 bg-white">
+                            <h4 class="ui-font-sans ui-text-md ui-margin-bottom-1">Key Metric 2</h4>
+                            <p class="ui-font-sans ui-text-xl ui-text-secondary-dark">87%</p>
+                            <p class="ui-font-sans ui-text-xs ui-text-error">-2% vs target</p>
+                        </div>
+                         <div class="ui-padding-4 radius-md ui-flex-1 bg-white">
+                            <h4 class="ui-font-sans ui-text-md ui-margin-bottom-1">Quick Actions</h4>
+                            <button type="button" class="usa-button ui-width-full ui-margin-bottom-1">New Report</button>
+                            <button type="button" class="usa-button usa-button--outline ui-width-full">Settings</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottom Row Widgets -->
+                    <div class="ui-col-span-12 tablet:ui-col-span-4 ui-padding-4 radius-md bg-white">
+                        <h4 class="ui-font-sans ui-text-md ui-margin-bottom-1">Recent Activity</h4>
+                        <ul class="usa-list usa-list--unstyled">
+                            <li class="ui-font-sans ui-text-sm ui-padding-y-1 border-bottom-1px border-base-lighter">User A signed up.</li>
+                            <li class="ui-font-sans ui-text-sm ui-padding-y-1 border-bottom-1px border-base-lighter">Report B generated.</li>
+                            <li class="ui-font-sans ui-text-sm ui-padding-y-1">Task C completed.</li>
+                        </ul>
+                    </div>
+                    <div class="ui-col-span-12 tablet:ui-col-span-4 ui-padding-4 radius-md bg-white">
+                        <h4 class="ui-font-sans ui-text-md ui-margin-bottom-1">Data Table Snippet</h4>
+                        <div class="ui-padding-4 ui-display-flex ui-items-center ui-justify-center bg-base-lighter">
+                            <p class="ui-text-base-dark">[Table Placeholder]</p>
+                        </div>
+                    </div>
+                    <div class="ui-col-span-12 tablet:ui-col-span-4 ui-padding-4 radius-md bg-accent-cool-lightest"> 
+                         <h4 class="ui-font-sans ui-text-md ui-margin-bottom-1">Info Panel</h4>
+                        <p class="ui-font-sans ui-text-sm">This panel can show some contextual information or help text. Uses an accent background.</p>
+                    </div>
                 </div>
             </section>
 
@@ -219,7 +280,7 @@
                 <p class="font-code-xs"><code>ui-display-flex ui-justify-start tablet:ui-justify-center desktop:ui-justify-between</code></p>
 
                 <p class="margin-top-2 margin-bottom-1"><strong>Responsive Flex Direction & Item Alignment:</strong> Changes direction and alignment.</p>
-                <div class="bg-secondary-lighter padding-1 ui-display-flex ui-flex-col mobile-lg:ui-flex-row tablet:ui-flex-col desktop:ui-flex-row ui-items-start tablet:ui-items-center desktop:ui-items-end" style="min-height: 150px;">
+                <div class="bg-secondary-lighter padding-1 ui-display-flex ui-flex-col mobile-lg:ui-flex-row tablet:ui-flex-col desktop:ui-flex-row ui-items-start tablet:ui-items-center desktop:ui-items-end">
                     <div class="padding-1 bg-white border-1px border-base margin-05">Box A</div>
                     <div class="padding-1 bg-white border-1px border-base margin-05">Box B</div>
                     <div class="padding-1 bg-white border-1px border-base margin-05">Box C</div>
